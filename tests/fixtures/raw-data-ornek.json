@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "marka": "ornekmarka.com.tr",
+    "rakipler": ["rakip-a.com.tr", "rakip-b.com", "rakip-c.com.tr"],
+    "sektor": "e-ticaret",
+    "ulke": "TR",
+    "dil": "tr",
+    "mod": "pitch",
+    "kapsam": "seo+geo",
+    "tarih": "2026-04-19"
+  },
+  "marka_metrikler": {
+    "dr": 18,
+    "organic_traffic": 2150,
+    "organic_keywords": 847,
+    "referring_domains": 156
+  },
+  "marka_top_pages": [
+    {"url": "/", "traffic": 412},
+    {"url": "/kategori/kategori-bir", "traffic": 298}
+  ],
+  "marka_organic_keywords": [
+    {"keyword": "ornek kelime 1", "position": 7, "volume": 1600, "traffic": 52},
+    {"keyword": "ornek kelime 2", "position": 12, "volume": 890, "traffic": 18}
+  ],
+  "rakipler": {
+    "rakip-a.com.tr": { "dr": 52, "organic_traffic": 45200, "organic_keywords": 8900, "referring_domains": 1240 },
+    "rakip-b.com": { "dr": 31, "organic_traffic": 12400, "organic_keywords": 3100, "referring_domains": 420 },
+    "rakip-c.com.tr": { "dr": 28, "organic_traffic": 8900, "organic_keywords": 2200, "referring_domains": 310 }
+  },
+  "opportunity_keywords": [
+    {"keyword": "fırsat kelime a", "rakip_pos": 3, "volume": 2400, "kd": 18}
+  ],
+  "serp_snapshots": {},
+  "teknik_bulgular": [
+    { "category": "h1", "page": "/", "severity": "critical", "detail": "Ana sayfada H1 etiketi bulunmuyor." },
+    { "category": "meta", "page": "/kategori/kategori-bir", "severity": "high", "detail": "Meta description eksik." }
+  ],
+  "backlink_profile": {
+    "anchor_distribution": { "brand": 45, "naked_url": 30, "generic": 15, "exact_match": 10 },
+    "rd_tier_distribution": { "dr70plus": 8, "dr40_69": 42, "dr10_39": 94, "dr0_9": 12 }
+  },
+  "geo_durumu": {
+    "ai_overview_gorunum": false,
+    "perplexity_gorunum_orani": 0,
+    "chatgpt_gorunum_orani": 0,
+    "geo_checklist_tamamlanma": 0.18
+  },
+  "veri_eksikleri": []
+}
