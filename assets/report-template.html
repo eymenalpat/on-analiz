@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{MARKA_ADI}} — Ön Analiz Raporu</title>
+  <style>{{BRAND_CSS}}</style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">Inbound</div>
+      <nav>
+        <ul>
+          <li><a href="#ozet" data-section="ozet">Yönetici Özeti</a></li>
+          <li><a href="#metrikler" data-section="metrikler">Temel Metrikler</a></li>
+          <li><a href="#teknik" data-section="teknik">Teknik SEO</a></li>
+          <li><a href="#keywords" data-section="keywords">Keyword Evreni</a></li>
+          <li><a href="#firsatlar" data-section="firsatlar">Fırsat Keyword'leri</a></li>
+          <li><a href="#serp" data-section="serp">SERP Analizi</a></li>
+          <li><a href="#rakipler" data-section="rakipler">Rakip Kıyası</a></li>
+          <li><a href="#geo" data-section="geo">GEO / AEO Durumu</a></li>
+          <li><a href="#backlink" data-section="backlink">Backlink Snapshot</a></li>
+          <li><a href="#aksiyon" data-section="aksiyon">Aksiyon Planı</a></li>
+          <li><a href="#yontem" data-section="yontem">Yöntem ve Notlar</a></li>
+        </ul>
+      </nav>
+      <div class="meta">
+        {{MARKA_DOMAIN}}<br>
+        {{TARIH}}
+        <div class="mode-badge">{{MOD_ROZET}}</div>
+      </div>
+    </aside>
+    <main>
+      <section id="hero">
+        <h1>{{MARKA_ADI}}</h1>
+        <p style="color: var(--color-muted); font-size: 1.1rem;">SEO &amp; GEO Ön Analiz — {{TARIH}}</p>
+      </section>
+
+      <section id="ozet">
+        <div class="section-header"><span class="num">1</span><h2>Yönetici Özeti</h2></div>
+        {{YONETICI_OZETI}}
+      </section>
+
+      <section id="metrikler">
+        <div class="section-header"><span class="num">2</span><h2>Temel Metrikler</h2></div>
+        {{METRIKLER}}
+      </section>
+
+      <section id="teknik">
+        <div class="section-header"><span class="num">3</span><h2>Teknik SEO Durumu</h2></div>
+        {{TEKNIK}}
+      </section>
+
+      <section id="keywords">
+        <div class="section-header"><span class="num">4</span><h2>Organik Keyword Evreni</h2></div>
+        {{KEYWORDS}}
+      </section>
+
+      <section id="firsatlar">
+        <div class="section-header"><span class="num">5</span><h2>Fırsat Keyword'leri</h2></div>
+        {{FIRSATLAR}}
+      </section>
+
+      <section id="serp">
+        <div class="section-header"><span class="num">6</span><h2>SERP Analizi</h2></div>
+        {{SERP}}
+      </section>
+
+      <section id="rakipler">
+        <div class="section-header"><span class="num">7</span><h2>Rakip Kıyası</h2></div>
+        {{RAKIPLER}}
+      </section>
+
+      <section id="geo">
+        <div class="section-header"><span class="num">8</span><h2>GEO / AEO Durumu</h2></div>
+        {{GEO}}
+      </section>
+
+      <section id="backlink">
+        <div class="section-header"><span class="num">9</span><h2>İçerik ve Backlink Snapshot</h2></div>
+        {{BACKLINK}}
+      </section>
+
+      <section id="aksiyon">
+        <div class="section-header"><span class="num">10</span><h2>Aksiyon Planı</h2></div>
+        {{AKSIYON}}
+      </section>
+
+      <section id="yontem">
+        <div class="section-header"><span class="num">11</span><h2>Yöntem ve Notlar</h2></div>
+        {{YONTEM}}
+      </section>
+    </main>
+  </div>
+
+  <script>
+  // Scroll spy + tooltip
+  const glossary = {{GLOSSARY_JSON}};
+  document.querySelectorAll('.term').forEach(el => {
+    const termKey = el.dataset.term;
+    if (!glossary.terms[termKey]) return;
+    const tip = document.createElement('span');
+    tip.className = 'term-tooltip';
+    tip.textContent = glossary.terms[termKey];
+    el.appendChild(tip);
+    el.addEventListener('click', e => {
+      e.stopPropagation();
+      el.classList.toggle('active');
+    });
+  });
+  document.body.addEventListener('click', () => {
+    document.querySelectorAll('.term.active').forEach(el => el.classList.remove('active'));
+  });
+
+  // Scroll spy
+  const navLinks = document.querySelectorAll('.sidebar nav a');
+  const sections = document.querySelectorAll('main section[id]');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const link = document.querySelector(`.sidebar nav a[data-section="${e.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
