@@ -1,0 +1,4096 @@
+{
+  "items": [
+    {
+      "action": "AI Visibility Audit (AI Görünürlük Denetimi)",
+      "channel": "Site İçi",
+      "detail": "Markanın en çok satış getiren 30-50 ürün kategorisi ve marka adı sorgulanarak AI platformlarındaki görünürlüğün denetlenmesi.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 1",
+      "priority": "Kritik",
+      "task_type": "Analiz & Ölçüm",
+      "tool": "AI Visibility Tool, DataForSEO API"
+    },
+    {
+      "action": "→ Hedef 30-50 anahtar kelimenin belirlenmesi (top seller + category + brand)",
+      "channel": "",
+      "detail": "GSC'deki en yüksek gösterim alan sorgular ve en çok satılan ürün kategorileri baz alınmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Her sorgunun ChatGPT, Perplexity, Gemini, Google AI Mode ve Copilot'ta test edilmesi",
+      "channel": "",
+      "detail": "Aynı sorgu farklı AI platformlarında farklı sonuçlar verebilir; minimum 5 platform kontrol edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Her sonuçta markanın anılıp anılmadığının, bağlamın ve sıralamanın kaydedilmesi",
+      "channel": "",
+      "detail": "Anılma şekli (doğrudan öneri, listede yer alma, bağlam içinde geçme) de kategorize edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Sonuçların platform × sorgu matrisinde belgelenmesi",
+      "channel": "",
+      "detail": "Google Sheets veya Looker Studio'da canlı takip tablosu oluşturulmalı, tarihsel karşılaştırma yapılabilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Baseline raporunun oluşturulması ve tarihsel log kaydının başlatılması",
+      "channel": "",
+      "detail": "Mevcut durumun detaylı kaydı, sonraki optimizasyonlar sonrası karşılaştırma için gereklidir.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "Competitor AI Visibility Analysis (Rakip AI Görünürlük Analizi)",
+      "channel": "Site Dışı (Rakip Platformlar)",
+      "detail": "Doğrudan rakiplerin aynı sorgularda nasıl göründüğünün analiz edilmesi ve Share of Voice karşılaştırması yapılması.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Analiz & Ölçüm",
+      "tool": "AI Visibility Tool, Ahrefs"
+    },
+    {
+      "action": "→ Ana 3-5 rakibin belirlenmesi",
+      "channel": "",
+      "detail": "Organik aramada ve AI platformlarında sürekli görünen en güçlü rakipler seçilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Aynı 30-50 sorgunun rakip odaklı çalıştırılması",
+      "channel": "",
+      "detail": "Marka odaklı analizle aynı sorgular kullanılmalı, sonuçlar yan yana karşılaştırılmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Rakip bazlı atıf kaynağı haritasının çıkarılması",
+      "channel": "",
+      "detail": "Rakip sayfalarında en çok atıflandığı kaynaklar listelenmeli ve benzer kaynaklar bizim içerik stratejisine dahil edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Gap analizi: Rakip atıflanıp markanın atıflanmadığı sorguların tespit edilmesi",
+      "channel": "",
+      "detail": "Rakip atıflanıp marka atıflanmayan sorgular en yüksek fırsat alanlarını gösterir.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Share of Voice karşılaştırma tablosunun hazırlanması",
+      "channel": "",
+      "detail": "Her rakibe karşı marka görünürlük oranı hesaplanmalı ve aylık takibi yapılmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "Content Inventory & GEO Scoring (İçerik Envanteri ve GEO Puanlama)",
+      "channel": "Site İçi",
+      "detail": "Ürün sayfaları, blog yazıları, kategori açıklamaları ve rehberlerin GEO uyumluluk puanlamasının yapılması.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Analiz & Ölçüm",
+      "tool": "Ahrefs, GSC, Screaming Frog"
+    },
+    {
+      "action": "→ Tüm URL'lerin Screaming Frog veya Ahrefs ile taranması",
+      "channel": "",
+      "detail": "Screaming Frog'un JavaScript rendering modunda tarama yapılmalı, SSR olmayan sayfalar ayrı listelenmelidir.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Her sayfanın GEO uyumluluk kriterlerine göre puanlanması (schema, heading, freshness, citation)",
+      "channel": "",
+      "detail": "Schema, heading, freshness, citation gibi kriterlerde konsistent bir puanlama modeli uygulanmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Düşük puanlı sayfaların öncelik listesinin oluşturulması",
+      "channel": "",
+      "detail": "GEO skoru en düşük 20 sayfa prioritize edilmeli ve 30 gün içinde iyileştirme yapılmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ İçerik boşluk analizinin yapılması (content gap)",
+      "channel": "",
+      "detail": "Rakiplerde olup bizde olmayan içerik konuları ve format türleri tespit edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "AI Bot Crawl Log Analysis (AI Bot Tarama Log Analizi)",
+      "channel": "Site İçi",
+      "detail": "Sunucu loglarından GPTBot, PerplexityBot, ClaudeBot gibi AI tarayıcılarının ziyaret sıklığının ve eriştiği sayfaların analiz edilmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Analiz & Ölçüm",
+      "tool": "Log Analyzer, Screaming Frog"
+    },
+    {
+      "action": "→ Son 90 günlük sunucu loglarının çekilmesi",
+      "channel": "",
+      "detail": "Server loglarından AI bot crawl aktivitesi filtrelenerek analiz edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ AI bot user-agent'larının filtrelenmesi (GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot, Bingbot)",
+      "channel": "",
+      "detail": "GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, Claude-SearchBot, Bingbot, GoogleOther filtrelenmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ En çok ve en az taranan sayfaların raporlanması",
+      "channel": "",
+      "detail": "Yüksek priority sayfalar düşük crawl aldıysa robots.txt veya internal linking gözden geçirilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Crawl budget optimizasyon önerilerinin hazırlanması",
+      "channel": "",
+      "detail": "Düşük-value parametreleri block etmek, hızlı sunucu yanıtı vermek, sitemap'ler güncel tutmak önerilir.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "GA4 AI Traffic Segmentation (GA4 AI Trafik Segmentasyonu)",
+      "channel": "Site İçi",
+      "detail": "GA4'te ChatGPT, Perplexity ve diğer AI kaynaklı yönlendirmelerin ayrı segment olarak tanımlanması.",
+      "owner": "Analitik",
+      "phase": "Faz 1",
+      "priority": "Kritik",
+      "task_type": "Analiz & Ölçüm",
+      "tool": "GA4"
+    },
+    {
+      "action": "→ GA4'te AI trafik segmentinin oluşturulması (referral: chat.openai.com, perplexity.ai, gemini.google.com vb.)",
+      "channel": "",
+      "detail": "GA4'te özel segment veya audience oluşturulmalı, chatgpt.com, perplexity.com gibi AI referrer'lardan gelen trafik izlenmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ AI kaynaklı dönüşüm oranlarının izlenmesi için hedef kurulması",
+      "channel": "",
+      "detail": "GA4'te dönüşüm event'leri AI trafik için separately track edilmeli, attribution reporting'de AI session'lar görülmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Looker Studio dashboard'una AI trafik widget'ının eklenmesi",
+      "channel": "",
+      "detail": "Looker Studio'da AI trafik, citation rate, share of voice gösterilmeli, tarihsel karşılaştırma yapılabilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "AI Metrics Dashboard Setup (AI Metrik Dashboard Kurulumu)",
+      "channel": "Site İçi",
+      "detail": "Citation Rate, Share of Voice, Domain Influence gibi AI-spesifik KPI'ların takip dashboard'unun kurulması.",
+      "owner": "Analitik",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Analiz & Ölçüm",
+      "tool": "Looker Studio, DataForSEO API"
+    },
+    {
+      "action": "→ Takip edilecek KPI'ların belirlenmesi (Citation Rate, Share of Voice, AI Traffic, Sentiment)",
+      "channel": "",
+      "detail": "Citation Rate (AI'da kaç kez atıflandığı), Share of Voice (rakiplere karşı oranı), AI Traffic (trafik miktarı) takip edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ DataForSEO API veya AI Visibility Tool entegrasyonunun yapılması",
+      "channel": "",
+      "detail": "API entegrasyonu yapılmalı, dashboard'a günlük otomatik veri akışı sağlanmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Looker Studio dashboard tasarımının oluşturulması",
+      "channel": "",
+      "detail": "Tüm stakeholders'lar için erişilebilir, intuitive dashboard'u oluşturulmalı, drill-down analytics eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Haftalık/aylık otomatik raporlama akışının kurulması",
+      "channel": "",
+      "detail": "Scheduled raporlar tüm stakeholders'lara otomatik email'lenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "robots.txt & AI Bot Access Control",
+      "channel": "Site İçi",
+      "detail": "GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot gibi AI tarayıcılarına erişim izinlerinin düzenlenmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Kritik",
+      "task_type": "Teknik SEO",
+      "tool": "Screaming Frog"
+    },
+    {
+      "action": "→ Mevcut robots.txt dosyasının incelenmesi",
+      "channel": "",
+      "detail": "Mevcut engellerin AI botları etkileyip etkilemediği kontrol edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ AI bot user-agent listesinin hazırlanması (GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, Claude-SearchBot, Bingbot, GoogleOther)",
+      "channel": "",
+      "detail": "GPTBot, OAI-SearchBot, ChatGPT-User, PerplexityBot, ClaudeBot, Claude-SearchBot, Bingbot, GoogleOther dahil edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ İzin verilecek ve engellenecek botların belirlenmesi",
+      "channel": "",
+      "detail": "Training botlarına (GPTBot) izin vermek isteğe bağlı, search botlarına (OAI-SearchBot) izin verilmesi önerilir.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ robots.txt güncellemesinin yapılması ve test edilmesi",
+      "channel": "",
+      "detail": "robots.txt dosyası GPTBot, OAI-SearchBot, ClaudeBot gibi AI botlarına allow verilmek üzere güncellenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Değişikliklerin GSC ve Bing Webmaster Tools'tan doğrulanması",
+      "channel": "",
+      "detail": "Google Search Console ve Bing Webmaster Tools'tan robots.txt değişiklikleri doğrulanmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "llms.txt File Creation (llms.txt Dosyası Oluşturma)",
+      "channel": "Site İçi",
+      "detail": "Site yapısını, ana kategori sayfalarını ve önemli içerikleri AI modelleri için özetleyen llms.txt dosyasının oluşturulması.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Teknik SEO",
+      "tool": "-"
+    },
+    {
+      "action": "→ llms.txt standart formatının incelenmesi",
+      "channel": "",
+      "detail": "llms.txt spec'i incelenmeliydi, Anthropic, OpenAI, Google'ın standartları kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Site haritasından öncelikli URL'lerin seçilmesi",
+      "channel": "",
+      "detail": "Öncelikli ürün, kategori, rehber ve brand pages seçilmeli, AI'ların atıflaması muhtemel sayfalar listede olmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Her URL için kısa açıklama yazılması",
+      "channel": "",
+      "detail": "URL'lerin content özeti, primary keyword'ü ve önemi açıklanmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Dosyanın root dizine yüklenmesi ve test edilmesi",
+      "channel": "",
+      "detail": "/llms.txt'ye erişilebilir olmalı, sitenin root'unda bulunmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "Server-Side Rendering Check (SSR / Pre-render Kontrolü)",
+      "channel": "Site İçi",
+      "detail": "AI tarayıcılarının JavaScript çalıştıramaması nedeniyle kritik sayfaların SSR veya pre-render ile sunulmasının sağlanması.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Kritik",
+      "task_type": "Teknik SEO",
+      "tool": "Screaming Frog, Chrome DevTools"
+    },
+    {
+      "action": "→ JavaScript rendering bağımlılığının test edilmesi (JS disabled ile kontrol)",
+      "channel": "",
+      "detail": "Site JavaScript olmadan render olup olmadığı test edilmeliydi, SSR tercih edilen'ydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Kritik ürün ve kategori sayfalarının SSR durumunun kontrol edilmesi",
+      "channel": "",
+      "detail": "En önemli sayfalar server-side render edilmeliydi, böylece AI botları baştan content görebilecekti.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Pre-render çözümünün (Rendertron, Prerender.io vb.) değerlendirilmesi",
+      "channel": "",
+      "detail": "Rendertron, Prerender.io gibi pre-render servisleri değerlendirilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Implementasyonun yapılması ve AI botları ile test edilmesi",
+      "channel": "",
+      "detail": "Seçilen çözüm kurulmalı, GPTBot ve diğer AI botlarıyla test edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "Core Web Vitals & Page Speed Optimization",
+      "channel": "Site İçi",
+      "detail": "TTFB değerinin 200ms altına indirilmesi ve Core Web Vitals metriklerinin optimize edilmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Teknik SEO",
+      "tool": "GSC, PageSpeed Insights"
+    },
+    {
+      "action": "→ Mevcut CWV değerlerinin GSC'den çekilmesi",
+      "channel": "",
+      "detail": "GSC'den tüm CWV metrics'leri çekilmeliydi (TTFB, LCP, CLS, INP).",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ TTFB, LCP, CLS ve INP sorunlu sayfaların listelenmesi",
+      "channel": "",
+      "detail": "Her metric için sorunlu sayfalar listelenmeliydi, prioritize edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Optimizasyon planının hazırlanması (image lazy load, CSS/JS minify, CDN)",
+      "channel": "",
+      "detail": "Image optimization, CSS/JS minification, CDN kullanımı, database query optimization yapılmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Değişikliklerin uygulanması ve sonuçların izlenmesi",
+      "channel": "",
+      "detail": "Optimizasyonlar 30 gün boyunca GSC'den takip edilmeli, iyileşmeler belgelenmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "Semantic HTML & Meta Optimization",
+      "channel": "Site İçi",
+      "detail": "Heading hierarchy (H1-H6), semantic HTML5 etiketleri ve meta tag'lerin AI uyumlu optimize edilmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Teknik SEO",
+      "tool": "Screaming Frog"
+    },
+    {
+      "action": "→ H1-H6 yapısının site genelinde denetlenmesi",
+      "channel": "",
+      "detail": "Her sayfada H1 bulunmalı, heading hierarchy düzgün olmalı, keyword'ler heading'lere dahil edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Semantic HTML5 etiketlerinin (article, section, nav, aside) kontrol edilmesi",
+      "channel": "",
+      "detail": "article, section, nav, aside, header, footer gibi semantic tag'ler kullanılmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Title ve meta description'ların AI-dostu yeniden yazılması",
+      "channel": "",
+      "detail": "AI'lar doğru title/description okusun diye, keyword'ler natural olarak dahil edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Open Graph ve Twitter Card meta tag'lerinin kontrol edilmesi",
+      "channel": "",
+      "detail": "OG tags ve Twitter Card metatag'leri eklenmeliydi, sosyal share'lerde rich preview gösterilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "IndexNow Implementation (IndexNow Uygulaması)",
+      "channel": "Site İçi",
+      "detail": "Yeni ürün eklemeleri ve fiyat güncellemelerinin anında Bing/Yandex'e bildirilmesi için IndexNow protokolünün uygulanması.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Orta",
+      "task_type": "Teknik SEO",
+      "tool": "Bing Webmaster Tools"
+    },
+    {
+      "action": "→ IndexNow API key'inin oluşturulması",
+      "channel": "",
+      "detail": "Bing IndexNow API key'i oluşturulmalı, site'e eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ CMS veya sunucu tarafında otomatik ping mekanizmasının kurulması",
+      "channel": "",
+      "detail": "Yeni URL eklendiğinde otomatik olarak IndexNow ping yapılmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Yeni ürün/içerik eklemelerinde otomatik bildirim akışının test edilmesi",
+      "channel": "",
+      "detail": "Ekleme işlemlerinden sonra API ping'i test edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "Bing Webmaster Tools & Shopping Feed",
+      "channel": "Site Dışı (Bing)",
+      "detail": "ChatGPT'nin Bing altyapısını kullanması nedeniyle Bing'e kayıt olunması ve Shopping Feed'in optimize edilmesi.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Teknik SEO",
+      "tool": "Bing Webmaster Tools"
+    },
+    {
+      "action": "→ Bing Webmaster Tools hesabının oluşturulması ve site doğrulanması",
+      "channel": "",
+      "detail": "Bing'de site doğrulanmalı, crawl request'leri takip edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ XML sitemap'in Bing'e gönderilmesi",
+      "channel": "",
+      "detail": "Sitemap Bing'e gönderilmeliydi, her URL dahil edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Bing Shopping Feed'inin oluşturulması ve gönderilmesi",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Bing Places for Business kaydının yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "XML Sitemap Optimization for AI (XML Sitemap AI Optimizasyonu)",
+      "channel": "Site İçi",
+      "detail": "XML sitemap'in AI tarayıcıları için optimize edilmesi, tüm kritik sayfaların dahil edilmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Orta",
+      "task_type": "Teknik SEO",
+      "tool": "Screaming Frog"
+    },
+    {
+      "action": "→ Mevcut sitemap'in denetlenmesi (eksik URL, orphan page kontrolü)",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Lastmod tarihlerinin doğrulanması",
+      "channel": "",
+      "detail": "Sitemap'teki lastmod tarihleri gerçek content update tarihiyle eşleşmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Kategori bazlı sitemap segmentasyonunun yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Sitemap'in robots.txt ve GSC/Bing'e bildirilmesi",
+      "channel": "",
+      "detail": "XML sitemap'in robots.txt'de ve GSC/Bing tools'da declare edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "Internal Linking Optimization (Dahili Link Optimizasyonu)",
+      "channel": "Site İçi",
+      "detail": "AI tarayıcılarının site içi keşfini kolaylaştırmak için internal link yapısının optimize edilmesi, crawl depth'in 3 tık altında tutulması.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Teknik SEO",
+      "tool": "Screaming Frog, Ahrefs"
+    },
+    {
+      "action": "→ Mevcut internal link yapısının analiz edilmesi",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Orphan page'lerin tespit edilmesi",
+      "channel": "",
+      "detail": "İç link olmayan, dış kaynaktan erişilemeyen sayfalar bulunmalı ve fix edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Pillar-cluster yapısına uygun internal link planının oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Kritik sayfaların crawl depth'inin 3 veya altına indirilmesi",
+      "channel": "",
+      "detail": "Critial sayfalar site root'dan 3 tıkla ulaşılabilir olmalı, crawl efficiency artsın.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Breadcrumb navigasyonunun kontrol edilmesi",
+      "channel": "",
+      "detail": "Breadcrumb hierarchy doğru olmalı, breadcrumblist schema'sı eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "Product Schema Markup (JSON-LD)",
+      "channel": "Site İçi",
+      "detail": "Tüm ürün sayfalarına Product schema (JSON-LD) eklenmesi - name, description, price, availability, brand, review, image dahil.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Kritik",
+      "task_type": "Schema Markup",
+      "tool": "Rich Results Test, Schema.org"
+    },
+    {
+      "action": "→ Product schema şablonunun hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Zorunlu ve önerilen alanların (name, description, offers, brand, image, review, aggregateRating, sku, gtin) belirlenmesi",
+      "channel": "",
+      "detail": "Name, description, offers, brand, image, review fields tamamlanmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ CMS entegrasyonunun yapılması (otomatik oluşturma)",
+      "channel": "",
+      "detail": "Otomatik schema generation için CMS plugin veya custom template kullanılmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Rich Results Test ile doğrulanması",
+      "channel": "",
+      "detail": "Google Rich Results Test ve Schema.org Validator ile hem syntax hem semantic hatalar kontrol edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ GSC Enhancement raporunun izlenmesi",
+      "channel": "",
+      "detail": "Structured data enhancement opportunities regular olarak monitor edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "FAQPage Schema - Ürün Sayfaları",
+      "channel": "Site İçi",
+      "detail": "Ürün sayfalarındaki SSS bölümlerine FAQPage schema eklenmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Schema Markup",
+      "tool": "Rich Results Test"
+    },
+    {
+      "action": "→ Ürün sayfalarındaki mevcut SSS içeriklerinin tespit edilmesi",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ FAQPage JSON-LD şablonunun hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Her ürün için en az 3-5 SSS sorusunun eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Schema'nın Rich Results Test ile doğrulanması",
+      "channel": "",
+      "detail": "Google Rich Results Test ve Schema.org Validator ile hem syntax hem semantic hatalar kontrol edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "FAQPage Schema - Kategori Sayfaları",
+      "channel": "Site İçi",
+      "detail": "Kategori sayfalarına ürün seçimi, bakım, karşılaştırma gibi SSS'lerin eklenmesi ve schema ile işaretlenmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Schema Markup",
+      "tool": "Rich Results Test"
+    },
+    {
+      "action": "→ Her kategori için en yaygın soruların araştırılması (People Also Ask, forum analizi)",
+      "channel": "",
+      "detail": "Veri analiz yapılmalı, insight'lar çıkarılmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Kategori bazlı FAQ içeriklerinin yazılması",
+      "channel": "",
+      "detail": "Her kategori için 10-15 FAQ yazılmalı, kategoriye spesifik sorular sorulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ FAQPage schema'nın uygulanması",
+      "channel": "",
+      "detail": "Action'lar implement edilmeliydi, sonuçlar measured edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Doğrulama ve test",
+      "channel": "",
+      "detail": "Schema'lar Rich Results Test'te doğrulanmalı, render test yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "FAQPage Schema - Blog İçerikleri",
+      "channel": "Site İçi",
+      "detail": "Blog yazılarının sonuna SSS bölümü eklenmesi ve FAQPage schema ile işaretlenmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Orta",
+      "task_type": "Schema Markup",
+      "tool": "Rich Results Test"
+    },
+    {
+      "action": "→ En yüksek trafikli blog yazılarının seçilmesi",
+      "channel": "",
+      "detail": "Best option research sonrası seçilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Her blog yazısı için 3-5 ilgili SSS sorusunun yazılması",
+      "channel": "",
+      "detail": "Blog post'la ilgili FAQ'lar yazılmalı, schema ile markup edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ FAQPage schema uygulanması",
+      "channel": "",
+      "detail": "Action'lar implement edilmeliydi, sonuçlar measured edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Blog şablonuna SSS bölümünün standart olarak eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "HowTo Schema Markup",
+      "channel": "Site İçi",
+      "detail": "Ürün kullanım, kurulum ve bakım rehberlerine HowTo schema eklenmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Schema Markup",
+      "tool": "Rich Results Test"
+    },
+    {
+      "action": "→ HowTo uygun içeriklerin tespit edilmesi (kurulum, kullanım, bakım rehberleri)",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ HowTo JSON-LD şablonunun hazırlanması (step, tool, supply, image)",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Mevcut içeriklere HowTo schema uygulanması",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Yeni rehber şablonuna entegre edilmesi",
+      "channel": "",
+      "detail": "Template'e HowTo schema entegre edilmeli, otomatik şekilde implement edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "ItemList Schema - Kategori ve Listeleme Sayfaları",
+      "channel": "Site İçi",
+      "detail": "Kategori ve listeleme sayfalarına ItemList schema eklenerek ürün sıralamasının yapılandırılmış veri olarak sunulması.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Schema Markup",
+      "tool": "Rich Results Test"
+    },
+    {
+      "action": "→ ItemList schema spesifikasyonunun incelenmesi",
+      "channel": "",
+      "detail": "ItemList standard incelenmeliydi, ListItem structure'ı understand edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Kategori sayfaları için otomatik ItemList JSON-LD üretiminin yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ ListItem pozisyon numaralarının doğru sıralanması",
+      "channel": "",
+      "detail": "Her item'ın position attribute'u doğru order'da olmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Rich Results Test ile doğrulanması",
+      "channel": "",
+      "detail": "Google Rich Results Test ve Schema.org Validator ile hem syntax hem semantic hatalar kontrol edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "BreadcrumbList Schema",
+      "channel": "Site İçi",
+      "detail": "Site genelinde navigasyon yapısının BreadcrumbList schema ile işaretlenmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Orta",
+      "task_type": "Schema Markup",
+      "tool": "Rich Results Test"
+    },
+    {
+      "action": "→ Mevcut breadcrumb yapısının kontrol edilmesi",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ BreadcrumbList JSON-LD şablonunun hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ CMS'e otomatik BreadcrumbList eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Tüm sayfa tiplerinde test edilmesi",
+      "channel": "",
+      "detail": "Schema tüm sayfa tiplerinde (product, article, category) test edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "Review & AggregateRating Schema",
+      "channel": "Site İçi",
+      "detail": "Ürün değerlendirmelerine Review ve AggregateRating schema eklenmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Schema Markup",
+      "tool": "Rich Results Test"
+    },
+    {
+      "action": "→ Mevcut yorum/değerlendirme sisteminin incelenmesi",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Review ve AggregateRating JSON-LD entegrasyonunun yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Spam/sahte yorum filtreleme politikasının kontrol edilmesi",
+      "channel": "",
+      "detail": "Review moderation policy kontrol edilmeliydi, spam filtresi çalışıyor mu kontrolü yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Rich Results Test ile doğrulanması",
+      "channel": "",
+      "detail": "Google Rich Results Test ve Schema.org Validator ile hem syntax hem semantic hatalar kontrol edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "Organization & Author Schema",
+      "channel": "Site İçi",
+      "detail": "Şirket bilgileri ve içerik yazarları için Organization ve Person schema eklenmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 1",
+      "priority": "Orta",
+      "task_type": "Schema Markup",
+      "tool": "Rich Results Test"
+    },
+    {
+      "action": "→ Organization schema'nın oluşturulması (name, url, logo, sameAs, contactPoint)",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Person schema'nın yazar profilleri için hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Ana sayfaya Organization schema eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "→ Blog yazılarına Article + author Person schema eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Schema Markup",
+      "tool": ""
+    },
+    {
+      "action": "Product Description GEO Optimization (Ürün Açıklaması GEO Optimizasyonu)",
+      "channel": "Site İçi",
+      "detail": "Her ürün açıklamasının ilk 1-2 cümlesinde ürünün ne olduğu, kime hitap ettiği ve temel faydasının net şekilde belirtilmesi.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Kritik",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "-"
+    },
+    {
+      "action": "→ GEO uyumlu ürün açıklaması şablonunun hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ İlk cümlede ürün tanımı + hedef kitle + ana fayda formülünün uygulanması",
+      "channel": "",
+      "detail": "Action'lar implement edilmeliydi, sonuçlar measured edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Teknik özelliklerin karşılaştırılabilir tablo formatında sunulması",
+      "channel": "",
+      "detail": "Product specs tablo formatında sunulmalı, AI'ların parse etmesi kolay olmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Her açıklamaya alıntılanabilir (quotable) cümleler eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Öncelikli 50 ürün sayfasından başlanması",
+      "channel": "",
+      "detail": "Top 50 product pages'den başlanmalı, en çok görünürlük beklenen sayfalar seçilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "Answer-First Content Formatting (Yanıt Öncelikli İçerik Formatı)",
+      "channel": "Site İçi",
+      "detail": "Tüm kritik sayfalarda her bölümün başına 40-60 kelimelik doğrudan yanıt (TL;DR) eklenmesi. AI motorlarının alıntılama olasılığını artırması.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "-"
+    },
+    {
+      "action": "→ En yüksek trafikli 30 sayfanın seçilmesi",
+      "channel": "",
+      "detail": "Best option research sonrası seçilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Her bölüm başına TL;DR / özet paragraf eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Heading altlarına doğrudan, net yanıtlar yazılması",
+      "channel": "",
+      "detail": "FAQ answer'lar heading hemen altında yazılmalı, skimmable olmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Kalan sayfaların kademeli güncellenmesi",
+      "channel": "",
+      "detail": "Remaining pages'e phased approach uygulanmalı, priority bazlı güncellenmeler yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "Category Page Content Enrichment (Kategori Sayfası İçerik Zenginleştirme)",
+      "channel": "Site İçi",
+      "detail": "Kategori sayfalarına 300-500 kelimelik açıklayıcı içerik, SSS ve alıcı rehberi eklenmesi.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "-"
+    },
+    {
+      "action": "→ Tüm kategori sayfalarının içerik durumunun denetlenmesi",
+      "channel": "",
+      "detail": "Kontrolu yapılmalı ve doğruluğu verify edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Her kategoriye giriş paragrafı yazılması",
+      "channel": "",
+      "detail": "Category page'lerin başında 2-3 paragraf kategoriyi tanıtmalı, primary keyword'ü dahil etmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Kategori bazlı SSS bölümünün eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ İlgili buying guide'lara internal link verilmesi",
+      "channel": "",
+      "detail": "Category page'ler ilgili buying guide'lara link vermeliydi, context-based linking yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "Product Comparison Tables (Ürün Karşılaştırma Tabloları)",
+      "channel": "Site İçi",
+      "detail": "Benzer ürünlerin özellik, fiyat ve kullanım alanı bazında karşılaştırma tablolarının oluşturulması.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "-"
+    },
+    {
+      "action": "→ En çok karşılaştırılan ürün gruplarının belirlenmesi",
+      "channel": "",
+      "detail": "User behavior data'dan most compared product groups identify edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Karşılaştırma tablosu şablonunun hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Her tablo için en az 5-7 karşılaştırma kriterinin belirlenmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Tabloların kategori ve ürün sayfalarına yerleştirilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "FAQ & SSS Pages Creation (SSS Sayfaları Oluşturma)",
+      "channel": "Site İçi",
+      "detail": "Ürün kategorileri, alışveriş süreçleri ve sektörel konular için kapsamlı SSS sayfalarının oluşturulması.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "GSC, Ahrefs"
+    },
+    {
+      "action": "→ People Also Ask ve forum sorularının araştırılması",
+      "channel": "",
+      "detail": "GSC queries, Ahrefs Questions, Reddit ve Quora en zengin soru kaynakları.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Kategori bazlı SSS içeriklerinin yazılması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Satın alma süreci SSS sayfasının hazırlanması (kargo, iade, ödeme)",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ FAQPage schema uygulanması",
+      "channel": "",
+      "detail": "Action'lar implement edilmeliydi, sonuçlar measured edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ SSS sayfalarının ilgili sayfalara internal link ile bağlanması",
+      "channel": "",
+      "detail": "Internal/external link'ler context-relevant olmalı, relevance high olmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "Buying Guides & How-to Content (Alıcı Rehberleri)",
+      "channel": "Site İçi",
+      "detail": "Her ana kategori için 800-1200 kelimelik alıcı rehberi ve ürün kullanım rehberlerinin hazırlanması.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "-"
+    },
+    {
+      "action": "→ Rehber ihtiyacı olan kategorilerin önceliklendirilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Rehber şablonunun hazırlanması (giriş, kriterler, öneri, SSS)",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Her rehbere istatistik ve kaynak eklenmesi",
+      "channel": "",
+      "detail": "İçeriklerde verifiable statistics olan sayfalar %30-40 daha fazla AI atıfı alıyor.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ HowTo schema uygulanması",
+      "channel": "",
+      "detail": "Action'lar implement edilmeliydi, sonuçlar measured edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ İlgili ürün ve kategori sayfalarına internal link verilmesi",
+      "channel": "",
+      "detail": "Internal/external link'ler context-relevant olmalı, relevance high olmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "Citation & Source Framework (Kaynak Atıf Sistemi Kurma)",
+      "channel": "Site İçi",
+      "detail": "Tüm iddia ve değerlendirmelere doğrulanabilir istatistik, kaynak referansı ve son güncelleme tarihi eklenmesi. AI motorları doğrulanabilir kaynakları yüzde 30-40 daha fazla atıflama.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "-"
+    },
+    {
+      "action": "→ İçerik atıf standartlarının belirlenmesi (sayı/popülasyon/zaman dilimi + kaynak)",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Mevcut içeriklerde kaynak eksikliği olan bölümlerin taranması",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ İstatistik ve kaynak eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Son güncelleme tarihinin tüm GEO-kritik sayfalara eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Kaynak ekleme sürecinin editoryal iş akışına dahil edilmesi",
+      "channel": "",
+      "detail": "İçerik editorial process'e uygun olmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "Heading Hierarchy & Quotable Sentences (Başlık Yapısı ve Alıntılanabilir Cümleler)",
+      "channel": "Site İçi",
+      "detail": "H2-H3 yapısının soru-cevap formatında düzenlenmesi ve her bölüme alıntılanabilir özet cümleler eklenmesi.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "-"
+    },
+    {
+      "action": "→ Heading yapısının site genelinde denetlenmesi",
+      "channel": "",
+      "detail": "Kontrolu yapılmalı ve doğruluğu verify edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ H2'lerin soru formatına dönüştürülmesi (uygun yerlerde)",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Her bölümün ilk cümlesinin alıntılanabilir (quotable) şekilde yazılması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Chunkable content formatına uygun yapının sağlanması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "Entity-Based Optimization & Topical Authority Clusters",
+      "channel": "Site İçi",
+      "detail": "Marka, ürün ve kategori entity'lerinin net tanımlanması ve Topical Authority Cluster yapısının kurulması.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "Ahrefs, GSC"
+    },
+    {
+      "action": "→ Ana entity'lerin (marka, ürün grupları, kategoriler) haritalanması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Her entity için pillar page'in belirlenmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Cluster content planının oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Internal linking ile cluster yapısının güçlendirilmesi",
+      "channel": "",
+      "detail": "Internal/external link'ler context-relevant olmalı, relevance high olmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Entity'lerin schema markup ile desteklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "Long-tail & Conversational Query Optimization",
+      "channel": "Site İçi",
+      "detail": "AI platformlarında sorulan doğal dil sorgularına uygun uzun kuyruk içerik optimizasyonu yapılması.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "GSC, Ahrefs"
+    },
+    {
+      "action": "→ GSC'den long-tail sorguların çekilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ AI platformlarında test edilen sorguların analiz edilmesi",
+      "channel": "",
+      "detail": "Functionality ve compatibility test edilmeli, edge case'ler cover edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Conversational tone ile içerik güncellenmesi",
+      "channel": "",
+      "detail": "Bilgiler son güncel versiyona update edilmeli, stale data remove edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Soru bazlı heading'lerin eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "Query Fan-Out Backlink Analysis (Query Fan-Out Backlink Analizi)",
+      "channel": "Site Dışı (Rakip Kaynaklar)",
+      "detail": "AI'ların sorguları alt sorgulara ayırması (Query Fan-Out) sürecinde atıfladığı kaynakların analiz edilmesi ve backlink stratejisinin buna göre şekillendirilmesi.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Analiz & Ölçüm",
+      "tool": "Ahrefs, DataForSEO API"
+    },
+    {
+      "action": "→ Hedef sorguların AI platformlarında test edilmesi ve alt sorguların tespit edilmesi",
+      "channel": "",
+      "detail": "Functionality ve compatibility test edilmeli, edge case'ler cover edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Her alt sorgu için AI'ın atıfladığı kaynakların (domain + sayfa) listelenmesi",
+      "channel": "",
+      "detail": "Comprehensive list oluşturulmalı, duplicates remove edilmeli, prioritize edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Bu kaynakların Ahrefs'te backlink profilinin incelenmesi",
+      "channel": "",
+      "detail": "Internal/external link'ler context-relevant olmalı, relevance high olmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Ortak kaynak patternlerinin tespit edilmesi (hangi site türleri sürekli atıflanıyor?)",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Backlink hedef listesinin oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "Community Question Mining (Topluluk Soru Madenciliği)",
+      "channel": "Site Dışı (Reddit, Forum, Quora)",
+      "detail": "Reddit, Quora ve sektörel forumlardaki kullanıcı sorularının toplanması ve içerik stratejisine dahil edilmesi.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Orta",
+      "task_type": "Analiz & Ölçüm",
+      "tool": "Ahrefs, Reddit"
+    },
+    {
+      "action": "→ İlgili subreddit ve forumların tespit edilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ En sık sorulan soruların kategorize edilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Yanıtlanmamış veya yetersiz yanıtlanan soruların belirlenmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ İçerik takvmine bu soruların eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "Content Chunking & Extractability Optimization (İçerik Parçalanabilirlik Optimizasyonu)",
+      "channel": "Site İçi",
+      "detail": "İçeriklerin AI sistemlerinin passage-level retrieval yapabilmesi için optimize edilmesi. 5000 karakterin altındaki sayfalar %66 extraction rate alırken, 20000+ sayfalar %12'de kalıyor.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": "-"
+    },
+    {
+      "action": "→ Her bölümün kendi başına anlam ifade edecek şekilde yazılması (self-contained)",
+      "channel": "",
+      "detail": "Bağlamdan bağımsız okunabilirlik sağlanmalı; AI sistemleri tek bir passage'ı alıntılayabilir.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Belirsiz zamirlerin (\"bu\", \"o\", \"yukarıdaki\") açık referanslarla değiştirilmesi",
+      "channel": "",
+      "detail": "AI extract ettiğinde zamir bağlamı kaybolur; her cümlede konu açıkça belirtilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Her bölüm başına 40-60 kelimelik doğrudan yanıt cümlesi eklenmesi",
+      "channel": "",
+      "detail": "TL;DR formatındaki özet cümleler AI'ların en sık alıntıladığı içerik parçaları.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "→ Tablo ve listelerin extractable formatta yapılandırılması",
+      "channel": "",
+      "detail": "HTML table ve ordered list formatı AI tarafından daha kolay parse edilir.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "İçerik Optimizasyonu",
+      "tool": ""
+    },
+    {
+      "action": "Google Knowledge Panel Optimization (Knowledge Panel Optimizasyonu)",
+      "channel": "Site Dışı (Google)",
+      "detail": "Google Knowledge Panel'in talep edilmesi ve optimize edilmesi. Knowledge Panel AI sistemlerinin marka bilgisi için kullandığı temel kaynaklardan biri.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 1",
+      "priority": "Yüksek",
+      "task_type": "Dış Platform",
+      "tool": "GSC"
+    },
+    {
+      "action": "→ Knowledge Panel'in mevcut durumunun kontrol edilmesi",
+      "channel": "",
+      "detail": "Marka adı Google'da aratılarak Knowledge Panel varlığı ve doğruluğu kontrol edilmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Google Knowledge Panel claim sürecinin başlatılması",
+      "channel": "",
+      "detail": "Google arama sonuçlarındaki \"Bu bilgi size mi ait?\" linkinden claim süreci başlatılmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Önerilen düzenlemelerin gönderilmesi",
+      "channel": "",
+      "detail": "Hatalı veya eksik bilgiler için \"Değişiklik öner\" seçeneği kullanılmalı.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Logo, açıklama, sosyal profil linklerinin güncellenmesi",
+      "channel": "",
+      "detail": "Tüm bilgilerin güncel ve tutarlı olması sağlanmalı; sameAs linkleri schema ile desteklenmeli.",
+      "owner": "",
+      "phase": "Faz 1",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "Keyword Topic Mapping (Anahtar Kelime Konu Haritalama)",
+      "channel": "Site İçi",
+      "detail": "Hedef kitlenin AI platformlarında sorduğu soruların haritalanması ve Topical Authority Cluster yapısına uygun içerik planının çıkarılması.",
+      "owner": "SEO + İçerik",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "İçerik Stratejisi",
+      "tool": "Ahrefs, SEOMonitor, GSC"
+    },
+    {
+      "action": "→ Seed keyword listesinin oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Ahrefs/SEOMonitor ile keyword genişletmenin yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Keyword'lerin topic cluster'lara gruplandırılması",
+      "channel": "",
+      "detail": "Clear strategy define edilmeli, timeline ve ownership specified edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Her cluster için pillar page ve destek içeriklerinin planlanması",
+      "channel": "",
+      "detail": "Clear strategy define edilmeli, timeline ve ownership specified edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Yayın takvimi ile eşleştirilmesi",
+      "channel": "",
+      "detail": "İçerik publish edilmeliydi, indexing beklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "Blog Publishing Calendar (Blog Yayın Takvimi)",
+      "channel": "Site İçi",
+      "detail": "Haftalık veya iki haftalık blog yayın takviminin oluşturulması ve GEO uyumlu içerik üretim sürecinin kurulması.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "İçerik Stratejisi",
+      "tool": "-"
+    },
+    {
+      "action": "→ Yayın sıklığının belirlenmesi (haftalık/iki haftalık)",
+      "channel": "",
+      "detail": "İçerik publish edilmeliydi, indexing beklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ İçerik türlerinin dağılımının planlanması (how-to, rehber, comparison, trend analizi)",
+      "channel": "",
+      "detail": "Veri analiz yapılmalı, insight'lar çıkarılmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Editoryal iş akışının kurulması (brief → yazım → review → schema → publish)",
+      "channel": "",
+      "detail": "Sistem veya tool entegrasyonu yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Content freshness takviminin oluşturulması (mevcut içerik güncellemeleri)",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "How-to & Tutorial Content (Rehber ve Eğitim İçerikleri)",
+      "channel": "Site İçi",
+      "detail": "Ürün kullanımı, bakımı, seçim kriterleri konularında adım adım rehber içeriklerin üretilmesi. AI motorlarının en fazla atıfladığı içerik türlerinden biri.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "İçerik Stratejisi",
+      "tool": "-"
+    },
+    {
+      "action": "→ How-to içerik ihtiyacı olan konuların listelenmesi",
+      "channel": "",
+      "detail": "Comprehensive list oluşturulmalı, duplicates remove edilmeli, prioritize edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Adım adım format şablonunun hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Her rehbere görsel/infografik eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ HowTo schema uygulanması",
+      "channel": "",
+      "detail": "Action'lar implement edilmeliydi, sonuçlar measured edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "Content Update & Freshness Cycle (İçerik Güncelleme Döngüsü)",
+      "channel": "Site İçi",
+      "detail": "Mevcut içeriklerin çeyreklik döngülerle güncellenmesi. AI motorları güncel içerikleri daha fazla atıflama.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "İçerik Stratejisi",
+      "tool": "GSC, Ahrefs"
+    },
+    {
+      "action": "→ İçerik güncelleme takviminin oluşturulması (çeyreklik)",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Trafik kaybeden içeriklerin önceliklendirilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Güncel veri, istatistik ve yeni bilgilerin eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Son güncelleme tarihinin güncellenmesi",
+      "channel": "",
+      "detail": "Bilgiler son güncel versiyona update edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "Original Research & Data Publishing (Orijinal Araştırma Yayınlama)",
+      "channel": "Site İçi",
+      "detail": "Sektöre özgü anket sonuçları, benchmark verileri veya trend analizleri gibi orijinal araştırmaların yayınlanması. AI motorları benzersiz veri kaynaklarını daha sık atıflama.",
+      "owner": "Pazarlama",
+      "phase": "Faz 2",
+      "priority": "Orta",
+      "task_type": "İçerik Stratejisi",
+      "tool": "-"
+    },
+    {
+      "action": "→ Araştırma konusunun ve metodolojisinin belirlenmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Veri toplama sürecinin başlatılması",
+      "channel": "",
+      "detail": "Comprehensive list oluşturulmalı, duplicates remove edilmeli, prioritize edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Araştırma raporunun hazırlanması ve yayınlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Araştırmanın basın bülteni ile duyurulması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "Content Citation & Reference Structure (İçerik Kaynak ve Atıf Yapısı)",
+      "channel": "Site İçi",
+      "detail": "Blog ve rehberlerde otoriter kaynak referansları kullanılması ve doğrulanabilir veri atıflarının yapılması.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "İçerik Stratejisi",
+      "tool": "-"
+    },
+    {
+      "action": "→ Atıf standartlarının belirlenmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Her blog yazısında en az 3-5 otoriter kaynak referansı eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ İstatistiklerde kaynak, tarih ve popülasyon bilgisinin belirtilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Editoryal kontrol listesine atıf kontrolünün eklenmesi",
+      "channel": "",
+      "detail": "İlgili alan doğruluk için review edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "Wikipedia Content Update (Wikipedia İçerik Güncellemesi)",
+      "channel": "Site Dışı (Wikipedia)",
+      "detail": "AI sistemlerinin marka bilgisi üretirken Wikipedia'yı temel kaynak olarak kullanması nedeniyle marka/şirket Wikipedia sayfasının güncellenmesi.",
+      "owner": "PR / İçerik",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Dış Platform",
+      "tool": "-"
+    },
+    {
+      "action": "→ Mevcut Wikipedia sayfasının incelenmesi (varsa)",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Eksik veya güncel olmayan bilgilerin tespit edilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Güvenilir kaynaklarla desteklenmiş güncellemelerin yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Yeni sayfa oluşturma ihtiyacının değerlendirilmesi (notability kriterleri)",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Wikipedia politikalarına uygun düzenleme sürecinin takip edilmesi",
+      "channel": "",
+      "detail": "Metric'ler regular olarak monitor edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "Google Business Profile Optimization (GBP Optimizasyonu)",
+      "channel": "Site Dışı (Google)",
+      "detail": "Tüm lokasyonlar için GBP'nin eksiksiz doldurulması, düzenli paylaşımlar ve yorum yönetimi yapılması.",
+      "owner": "Pazarlama",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Dış Platform",
+      "tool": "Google Business Profile"
+    },
+    {
+      "action": "→ Tüm GBP profillerinin eksiksizlik kontrolünün yapılması",
+      "channel": "",
+      "detail": "İlgili alan doğruluk için review edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Eksik alanların (kategori, açıklama, saatler, fotoğraflar) tamamlanması",
+      "channel": "",
+      "detail": "Manual task'lar automate edilmeli, repetitive work eliminate edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Haftalık GBP post takviminin oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Yorum yanıtlama sürecinin kurulması",
+      "channel": "",
+      "detail": "Sistem veya tool entegrasyonu yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Q&A bölümünün proaktif doldurulması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "Şikayetvar & Complaint Platform Management",
+      "channel": "Site Dışı (Şikayetvar)",
+      "detail": "AI platformlarının şikayet sitelerindeki algıyı değerlendirirken bu verileri kullanması nedeniyle aktif yorum yönetimi yapılması.",
+      "owner": "Müşteri Hiz.",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Dış Platform",
+      "tool": "-"
+    },
+    {
+      "action": "→ Mevcut şikayetlerin analiz edilmesi ve kategorize edilmesi",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Yanıtlanmamış şikayetlerin yanıtlanması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Çözüm odaklı yanıt şablonlarının hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Haftalık şikayet takip sürecinin kurulması",
+      "channel": "",
+      "detail": "Sistem veya tool entegrasyonu yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Olumlu çözüm oranının artırılması için aksiyonların planlanması",
+      "channel": "",
+      "detail": "Clear strategy define edilmeli, timeline ve ownership specified edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "Review Platform Management (Trustpilot, Google Reviews)",
+      "channel": "Site Dışı (Trustpilot, Google)",
+      "detail": "İnceleme platformlarındaki puanların ve yorumların düzenli takip edilmesi ve iyileştirilmesi.",
+      "owner": "Müşteri Hiz.",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Dış Platform",
+      "tool": "-"
+    },
+    {
+      "action": "→ Tüm review platformlarındaki mevcut durumun raporlanması",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Yorum toplama stratejisinin oluşturulması (satış sonrası e-mail akışı)",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Olumsuz yorumlara 24-48 saat içinde yanıt verilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Yorum verilerinin aylık raporlanması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "G2 / Capterra Profile Optimization (varsa)",
+      "channel": "Site Dışı (G2, Capterra)",
+      "detail": "AI'ların en çok atıfladığı inceleme platformlarındaki profillerin optimize edilmesi.",
+      "owner": "Pazarlama",
+      "phase": "Faz 2",
+      "priority": "Orta",
+      "task_type": "Dış Platform",
+      "tool": "-"
+    },
+    {
+      "action": "→ Profil sayfasının eksiksiz doldurulması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Müşteri review toplama kampanyasının başlatılması",
+      "channel": "",
+      "detail": "Comprehensive list oluşturulmalı, duplicates remove edilmeli, prioritize edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Ürün/hizmet bilgilerinin güncel tutulması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "Reddit Community Participation (Reddit Topluluk Katılımı)",
+      "channel": "Site Dışı (Reddit)",
+      "detail": "Sektörle ilgili subreddit'lerde değer katan yanıtlar verilmesi. Perplexity atıflarının yüzde 47'si Reddit'ten gelmekte.",
+      "owner": "İçerik / Topluluk",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Dış Platform",
+      "tool": "Reddit"
+    },
+    {
+      "action": "→ İlgili subreddit'lerin tespit edilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Reddit hesap stratejisinin belirlenmesi (şeffaf marka hesabı veya uzman profili)",
+      "channel": "",
+      "detail": "Plan/strateji develop edilmeliydi, stakeholders'la align sağlanmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Haftalık katılım planının oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Değer katan, spam olmayan yanıtların verilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ AMA (Ask Me Anything) seansının planlanması",
+      "channel": "",
+      "detail": "Clear strategy define edilmeli, timeline ve ownership specified edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "YouTube Video Content Program (YouTube Video İçerik Programı)",
+      "channel": "Site Dışı (YouTube)",
+      "detail": "Ürün incelemeleri, karşılaştırmaları ve kullanım rehberleri video olarak üretilmesi.",
+      "owner": "İçerik + Video",
+      "phase": "Faz 2",
+      "priority": "Orta",
+      "task_type": "Dış Platform",
+      "tool": "YouTube Studio"
+    },
+    {
+      "action": "→ Video içerik takviminin oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Video şablonunun hazırlanması (intro, içerik, CTA)",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ YouTube SEO optimizasyonunun yapılması (title, description, tags, chapters)",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Video açıklamalarına site linklerinin eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Video transcript'lerinin blog içeriği olarak yayınlanması",
+      "channel": "",
+      "detail": "İçerik publish edilmeliydi, indexing beklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "Digital PR Calendar & Strategy (Dijital PR Takvimi ve Stratejisi)",
+      "channel": "Site Dışı (Medya)",
+      "detail": "AI farklı kaynaklardan bilgi sentezlediğinden, PR çalışmalarının AI görünürlüğünü destekleyecek şekilde planlanması.",
+      "owner": "PR / Pazarlama",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Dijital PR",
+      "tool": "-"
+    },
+    {
+      "action": "→ Hedef medya listesinin oluşturulması (yüksek DA siteler)",
+      "channel": "",
+      "detail": "DA 50+ siteler önceliklendirilmeli; AI'ların atıfladığı kaynak tiplerine göre seçim yapılmalı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ Aylık PR takviminin hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ Basın bülteni şablonunun GEO uyumlu hazırlanması",
+      "channel": "",
+      "detail": "Bültenlerde quotable istatistikler ve uzman yorumları bulunmalı; AI'lar bu tür içerikleri daha sık atıflıyor.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ Uzman yorumu ve veri odaklı hikaye açılarının belirlenmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ PR sonuçlarının AI atıf etkisinin ölçülmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "Guest Post Strategy (Konuk Yazarlık Stratejisi)",
+      "channel": "Site Dışı (Sektörel Siteler)",
+      "detail": "AI'ların sıklıkla atıfladığı yüksek otoriteli sitelerde konuk yazar olarak içerik yayınlanması, marka anılmasının sağlanması.",
+      "owner": "PR / İçerik",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Dijital PR",
+      "tool": "Ahrefs"
+    },
+    {
+      "action": "→ AI tarafından sık atıflanan sitelerin tespit edilmesi (Query Fan-Out analizinden)",
+      "channel": "",
+      "detail": "Veri analiz yapılmalı, insight'lar çıkarılmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ Guest post kabul eden sitelerin listelenmesi ve DA/DR kontrolü",
+      "channel": "",
+      "detail": "İlgili alan doğruluk için review edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ Her site için pitch/konu önerisi hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ Yazıların marka anılmasını doğal şekilde içerecek formatta hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ Yayınlanan yazıların AI atıf etkisinin takip edilmesi",
+      "channel": "",
+      "detail": "İçerik publish edilmeliydi, indexing beklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "Industry Media Placements (Sektörel Medya Yerleştirmeleri)",
+      "channel": "Site Dışı (Sektörel Medya)",
+      "detail": "Yüksek otoriteli sektörel yayınlarda marka anılmasının sağlanması.",
+      "owner": "PR",
+      "phase": "Faz 2",
+      "priority": "Orta",
+      "task_type": "Dijital PR",
+      "tool": "-"
+    },
+    {
+      "action": "→ Sektörel medya listesinin oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ Uzman görüşü/röportaj fırsatlarının takip edilmesi",
+      "channel": "",
+      "detail": "Metric'ler regular olarak monitor edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ Sponsorlu içerik olanaklarının değerlendirilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "→ En iyi ve karşılaştırma listelerine dahil olma çalışmaları",
+      "channel": "",
+      "detail": "Comprehensive list oluşturulmalı, duplicates remove edilmeli, prioritize edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dijital PR",
+      "tool": ""
+    },
+    {
+      "action": "Social Media GEO Alignment (Sosyal Medya GEO Uyumu)",
+      "channel": "Site Dışı (Instagram, YouTube, X)",
+      "detail": "Sosyal medya içeriklerinin hashtag, anahtar kelime ve bağlantı stratejisiyle GEO'yu destekleyecek şekilde optimize edilmesi.",
+      "owner": "Sosyal Medya",
+      "phase": "Faz 2",
+      "priority": "Orta",
+      "task_type": "Sosyal Medya",
+      "tool": "-"
+    },
+    {
+      "action": "→ Sosyal medya bio ve profil bilgilerinin GEO uyumlu güncellenmesi",
+      "channel": "",
+      "detail": "Bilgiler son güncel versiyona update edilmeli, stale data remove edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Sosyal Medya",
+      "tool": ""
+    },
+    {
+      "action": "→ Post'larda tutarlı marka mesajı ve anahtar kelimelerin kullanılması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Sosyal Medya",
+      "tool": ""
+    },
+    {
+      "action": "→ Site içeriklerine düzenli bağlantı verilmesi",
+      "channel": "",
+      "detail": "Internal/external link'ler context-relevant olmalı, relevance high olmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Sosyal Medya",
+      "tool": ""
+    },
+    {
+      "action": "→ UGC (User Generated Content) stratejisinin oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Sosyal Medya",
+      "tool": ""
+    },
+    {
+      "action": "LinkedIn Profile & Thought Leadership",
+      "channel": "Site Dışı (LinkedIn)",
+      "detail": "AI Overviews atıflarının yüzde 15'inin LinkedIn'den gelmesi nedeniyle şirket ve yönetici profillerinin optimize edilmesi.",
+      "owner": "Üst Yönetim",
+      "phase": "Faz 2",
+      "priority": "Orta",
+      "task_type": "Sosyal Medya",
+      "tool": "LinkedIn"
+    },
+    {
+      "action": "→ Şirket LinkedIn sayfasının eksiksiz doldurulması",
+      "channel": "",
+      "detail": "Internal/external link'ler context-relevant olmalı, relevance high olmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Sosyal Medya",
+      "tool": ""
+    },
+    {
+      "action": "→ Yönetici/uzman profillerinin güncellenmesi",
+      "channel": "",
+      "detail": "Bilgiler son güncel versiyona update edilmeli, stale data remove edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Sosyal Medya",
+      "tool": ""
+    },
+    {
+      "action": "→ Haftalık derinlemesine sektörel paylaşım planının oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Sosyal Medya",
+      "tool": ""
+    },
+    {
+      "action": "→ LinkedIn makalelerinin yayınlanması",
+      "channel": "",
+      "detail": "İçerik publish edilmeliydi, indexing beklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Sosyal Medya",
+      "tool": ""
+    },
+    {
+      "action": "NAP Consistency Check (NAP Tutarlılığı Kontrolü)",
+      "channel": "Site Dışı (Dizinler)",
+      "detail": "Marka adı, adres ve telefon bilgilerinin tüm online dizinlerde tutarlı olmasının sağlanması.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Dış Platform",
+      "tool": "-"
+    },
+    {
+      "action": "→ Tüm online dizin listelerinin çıkarılması",
+      "channel": "",
+      "detail": "Veri doğru şekilde parse edilmeli, format consistency sağlanmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ NAP bilgilerinin her dizinde kontrol edilmesi",
+      "channel": "",
+      "detail": "İlgili alan kontrol edilmeli, accuracy ve currency doğrulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Tutarsızlıkların düzeltilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Yeni dizin kayıtlarının yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Hedef en iyi listelerinin tespit edilmesi",
+      "channel": "",
+      "detail": "Comprehensive list oluşturulmalı, duplicates remove edilmeli, prioritize edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Liste sahiplerine ulaşılması ve ürün bilgisi gönderilmesi",
+      "channel": "",
+      "detail": "Comprehensive list oluşturulmalı, duplicates remove edilmeli, prioritize edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Mevcut listelerde eksik bilgilerin güncellenmesi",
+      "channel": "",
+      "detail": "Mevcut durum kontrol edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Yeni listelerin oluşturulması için fırsatların takip edilmesi",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "Yandex Registration & Optimization (Yandex Kaydı ve Optimizasyonu)",
+      "channel": "Site Dışı (Yandex)",
+      "detail": "Yandex Webmaster Tools kaydı yapılması ve Yandex aramasında görünürlüğün sağlanması.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 2",
+      "priority": "Orta",
+      "task_type": "Dış Platform",
+      "tool": "Yandex Webmaster"
+    },
+    {
+      "action": "→ Yandex Webmaster Tools hesabının oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Site doğrulamasının yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ XML sitemap'in gönderilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Yandex Business Directory kaydının yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Yandex Reviews'da profil oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "Author Bios & Person Schema (Yazar Biyografileri)",
+      "channel": "Site İçi",
+      "detail": "İçerik yazarlarının doğrulanabilir kimlik bilgileriyle profil sayfaları oluşturulması ve Person schema eklenmesi.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "E-E-A-T & Otorite",
+      "tool": "-"
+    },
+    {
+      "action": "→ Yazar profil sayfası şablonunun hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "E-E-A-T & Otorite",
+      "tool": ""
+    },
+    {
+      "action": "→ Her yazarın biyografi, uzmanlık alanı ve sosyal medya bağlantılarının eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "E-E-A-T & Otorite",
+      "tool": ""
+    },
+    {
+      "action": "→ Person schema (JSON-LD) uygulanması",
+      "channel": "",
+      "detail": "Action'lar implement edilmeliydi, sonuçlar measured edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "E-E-A-T & Otorite",
+      "tool": ""
+    },
+    {
+      "action": "→ Blog yazılarına yazar bilgisi bağlantısının eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "E-E-A-T & Otorite",
+      "tool": ""
+    },
+    {
+      "action": "About Us & Contact Pages (Hakkımızda ve İletişim Sayfaları)",
+      "channel": "Site İçi",
+      "detail": "Şirket bilgileri, kuruluş geçmişi, ekip tanıtımı ve iletişim bilgilerinin kapsamlı şekilde güncellenmesi.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "E-E-A-T & Otorite",
+      "tool": "-"
+    },
+    {
+      "action": "→ Ekip tanıtım bölümünün eklenmesi",
+      "channel": "",
+      "detail": "İlgili bilgi veya element eklenmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "E-E-A-T & Otorite",
+      "tool": ""
+    },
+    {
+      "action": "→ İletişim sayfasının detaylandırılması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "E-E-A-T & Otorite",
+      "tool": ""
+    },
+    {
+      "action": "→ Sertifika, ödül ve ortaklıkların listelenmesi",
+      "channel": "",
+      "detail": "Comprehensive list oluşturulmalı, duplicates remove edilmeli, prioritize edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "E-E-A-T & Otorite",
+      "tool": ""
+    },
+    {
+      "action": "Bing Shopping Feed Optimization (E-Ticaret Spesifik)",
+      "channel": "Site Dışı (Bing)",
+      "detail": "ChatGPT'nin Bing altyapısını kullanması nedeniyle Bing Shopping Feed'inin optimize edilmesi.",
+      "owner": "E-Ticaret",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Teknik SEO",
+      "tool": "Bing Merchant Center"
+    },
+    {
+      "action": "→ Bing Merchant Center hesabının açılması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Ürün feed'inin oluşturulması ve gönderilmesi",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Feed kalite sorunlarının giderilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "→ Ürün bilgilerinin (title, description, image, price) optimize edilmesi",
+      "channel": "",
+      "detail": "Performance improve edilmeliydi, best practice apply edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Teknik SEO",
+      "tool": ""
+    },
+    {
+      "action": "AI Prompt Testing Library (AI Prompt Test Kütüphanesi)",
+      "channel": "Site Dışı (AI Platformları)",
+      "detail": "Her temel konu başlığı için 20-30 adet iteratif prompt oluşturulması ve haftalık test edilmesi. Sistematik izleme, optimizasyonların etkisini ölçmeyi sağlar.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Analiz & Ölçüm",
+      "tool": "AI Visibility Tool, DataForSEO API"
+    },
+    {
+      "action": "→ Konu başlığı × soru tipi matrisinin oluşturulması",
+      "channel": "",
+      "detail": "Her konu için informational, navigational, transactional ve comparison tipi sorular hazırlanmalı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Her konu için en az 20 test promptunun yazılması",
+      "channel": "",
+      "detail": "Farklı soru formülasyonları test edilmeli; \"en iyi X\", \"X vs Y\", \"X nasıl seçilir\" gibi.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ ChatGPT, Perplexity, Gemini, Copilot'ta haftalık testlerin çalıştırılması",
+      "channel": "",
+      "detail": "Aynı promptlar her hafta aynı platformlarda test edilerek tutarlı tracking sağlanmalı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Sonuçların tarihsel olarak loglanması",
+      "channel": "",
+      "detail": "Spreadsheet veya database'de tarih × platform × prompt × sonuç kaydı tutulmalı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Prompt formatı ve içerik yapısı korelasyonlarının analiz edilmesi",
+      "channel": "",
+      "detail": "Hangi içerik güncellemelerinin hangi prompt sonuçlarını etkilediği analiz edilmeli.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "Wikidata Entity Setup (Wikidata Entity Oluşturma)",
+      "channel": "Site Dışı (Wikidata)",
+      "detail": "Marka/şirket entity'sinin Wikidata'da oluşturulması/güncellenmesi. Wikidata, Google Knowledge Graph'ı besleyen temel kaynak; AI sistemleri de entity bilgisi için kullanır.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 2",
+      "priority": "Orta",
+      "task_type": "Dış Platform",
+      "tool": "-"
+    },
+    {
+      "action": "→ Mevcut Wikidata girişinin kontrol edilmesi",
+      "channel": "",
+      "detail": "wikidata.org'da marka adı aranarak mevcut item'ın varlığı kontrol edilmeli.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Yeni item oluşturulması veya mevcut item'ın güncellenmesi",
+      "channel": "",
+      "detail": "Yoksa yeni item oluşturulmalı; varsa eksik property'ler eklenmeli.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ İlgili property'lerin eklenmesi (official website, social profiles, industry)",
+      "channel": "",
+      "detail": "P856 (official website), P2002 (Twitter), P2013 (Facebook), P452 (industry) gibi property'ler eklenm eli.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Wikipedia sayfasıyla ilişkilendirme yapılması",
+      "channel": "",
+      "detail": "Eğer Wikipedia sayfası varsa sitelink olarak bağlanmalı; Knowledge Panel oluşma olasılığını artırır.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "Cross-Functional GEO Workflow (Çapraz Fonksiyonel GEO İş Akışı)",
+      "channel": "Site İçi",
+      "detail": "SEO, PR, İçerik, Geliştirici ve Pazarlama ekipleri arasında birleşik GEO iş akışının kurulması. GEO tek bir ekibin değil, çapraz fonksiyonel bir çalışmanın ürünü.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Raporlama",
+      "tool": "Looker Studio"
+    },
+    {
+      "action": "→ GEO sorumluluk matrisinin (RACI) oluşturulması",
+      "channel": "",
+      "detail": "Her görev için Responsible, Accountable, Consulted, Informed rolleri belirlenm eli.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Aylık GEO sync toplantısının takvime eklenmesi",
+      "channel": "",
+      "detail": "Tüm ilgili ekiplerin katıldığı aylık GEO ilerleme toplantısı düzenlenmeli.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Ortak GEO dashboard'unun tüm ekiplerle paylaşılması",
+      "channel": "",
+      "detail": "Looker Studio dashboard'u tüm paydaşlara view erişimi ile paylaşılmalı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Her ekibin GEO KPI'larının belirlenmesi",
+      "channel": "",
+      "detail": "İçerik ekibi: content score; Dev: schema coverage; PR: mention count gibi ekip bazlı KPI'lar.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "Earned Media & Brand Mention Monitoring (Kazanılmış Medya Takibi)",
+      "channel": "Site Dışı (Çeşitli)",
+      "detail": "Kontrol dışı marka anılmalarının (müşteri yorumları, gazeteci yazıları, topluluk tartışmaları) takip edilmesi. 250+ dokümanda marka anılması LLM algısını anlamlı şekilde etkiliyor.",
+      "owner": "PR / Pazarlama",
+      "phase": "Faz 2",
+      "priority": "Yüksek",
+      "task_type": "Analiz & Ölçüm",
+      "tool": "Ahrefs, DataForSEO API"
+    },
+    {
+      "action": "→ Pozitif mention'ların güçlendirilmesi",
+      "channel": "",
+      "detail": "Olumlu bahsedilmeler sosyal medyada paylaşılmalı ve teşekkür/ilişki kurulmalı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "→ Negatif mention'ların yönetilmesi",
+      "channel": "",
+      "detail": "Olumsuz bahsedilmelere hızlı ve yapıcı yanıt verilmeli; gerekirse düzeltme talep edilmeli.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Analiz & Ölçüm",
+      "tool": ""
+    },
+    {
+      "action": "Quora & Niche Forum Participation (Quora ve Niş Forum Katılımı)",
+      "channel": "Site Dışı (Çeşitli)",
+      "detail": "Reddit dışında Quora ve sektöre özel niş forumlarda aktif katılım sağlanması. AI sistemleri forum içeriklerini sıklıkla kaynak olarak kullanır.",
+      "owner": "İçerik / Topluluk",
+      "phase": "Faz 2",
+      "priority": "Orta",
+      "task_type": "Dış Platform",
+      "tool": "-"
+    },
+    {
+      "action": "→ Sektörle ilgili Quora Topics ve niş forumların tespit edilmesi",
+      "channel": "",
+      "detail": "Quora'da ilgili topic'ler ve sektörel forumlarda aktif tartışma konuları belirlenmeli.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Uzman profili oluşturulması",
+      "channel": "",
+      "detail": "Şirket uzmanı kimliğiyle profil oluşturulmalı; credentials ve uzmanlık alanı belirtilmeli.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Haftalık yanıt/katkı planının oluşturulması",
+      "channel": "",
+      "detail": "Haftada minimum 2-3 kaliteli yanıt hedeflenmeli; spam algısından kaçınılmalı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Değerli yanıtlar verilmesi",
+      "channel": "",
+      "detail": "Marka anılması doğal şekilde içerilmeli; promosyonel değil, bilgi odaklı olmalı.",
+      "owner": "",
+      "phase": "Faz 2",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Multimodal içerik stratejisinin belirlenmesi",
+      "channel": "",
+      "detail": "Plan/strateji develop edilmeliydi, stakeholders'la align sağlanmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ İnfografik takviminin oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ İnteraktif araçların planlanması (beden bulucu, karşılaştırma aracı, hesaplayıcı)",
+      "channel": "",
+      "detail": "Clear strategy define edilmeli, timeline ve ownership specified edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Video içerik üretim sürecinin başlatılması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "→ Alt text ve caption'ların GEO uyumlu yazılması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Dış Platform",
+      "tool": ""
+    },
+    {
+      "action": "Influencer & Content Partnerships (Influencer Ortaklıkları)",
+      "channel": "Site Dışı (Çeşitli)",
+      "detail": "Sektörel influencer'lar ve içerik üreticileriyle ortaklık kurularak markanın farklı platformlarda anılmasının sağlanması.",
+      "owner": "Pazarlama",
+      "phase": "Faz 3",
+      "priority": "Orta",
+      "task_type": "İleri Strateji",
+      "tool": "-"
+    },
+    {
+      "action": "→ Hedef influencer listesinin oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ İş birliği modellerinin belirlenmesi (review, co-creation, sponsored)",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ Influencer içeriklerinde marka anılmasının sağlanması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ Sonuçların AI atıf etkisiyle ölçülmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "Predictive Content Strategy (Öngörücü İçerik Stratejisi)",
+      "channel": "Site İçi",
+      "detail": "AI platformlarında yeni soru kalıplarının izlenerek rakiplerden önce içerik üretilmesi.",
+      "owner": "SEO + İçerik",
+      "phase": "Faz 3",
+      "priority": "Orta",
+      "task_type": "İleri Strateji",
+      "tool": "GSC, AI Tools"
+    },
+    {
+      "action": "→ AI platformlarındaki yeni sorgu trendlerinin düzenli izlenmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ Trend olan konularda hızlı içerik üretim sürecinin kurulması",
+      "channel": "",
+      "detail": "Sistem veya tool entegrasyonu yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ Sezonsal içerik planlamasının yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ Yükselen aramalar dashboard'unun kurulması",
+      "channel": "",
+      "detail": "Sistem veya tool entegrasyonu yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "AI-First Automation (AI Öncelikli Otomasyon)",
+      "channel": "Site İçi",
+      "detail": "Schema doğrulama, güncellik kontrolü ve bot erişim izleme işlemlerinin otomatize edilmesi.",
+      "owner": "Geliştirici",
+      "phase": "Faz 3",
+      "priority": "Düşük",
+      "task_type": "İleri Strateji",
+      "tool": "-"
+    },
+    {
+      "action": "→ Otomatik schema doğrulama script'inin kurulması",
+      "channel": "",
+      "detail": "Sistem veya tool entegrasyonu yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ İçerik freshness alert sisteminin yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ AI bot crawl monitoring alert'lerinin kurulması",
+      "channel": "",
+      "detail": "Sistem veya tool entegrasyonu yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ Broken link ve 404 otomatik tespit sisteminin kurulması",
+      "channel": "",
+      "detail": "Sistem veya tool entegrasyonu yapılmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "Agentic Commerce Preparation (Agentic Commerce Hazırlığı)",
+      "channel": "Site İçi",
+      "detail": "ChatGPT in-chat satın alma ve AI aracılı alışveriş deneyimine hazırlık yapılması.",
+      "owner": "E-Ticaret + Dev",
+      "phase": "Faz 3",
+      "priority": "Düşük",
+      "task_type": "İleri Strateji",
+      "tool": "-"
+    },
+    {
+      "action": "→ Agentic commerce trendlerinin araştırılması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ API-ready ürün kataloğunun hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ Yapılandırılmış ürün verilerinin güncellenmesi",
+      "channel": "",
+      "detail": "Bilgiler son güncel versiyona update edilmeli, stale data remove edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ ChatGPT Shopping entegrasyonunun takip edilmesi",
+      "channel": "",
+      "detail": "Metric'ler regular olarak monitor edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ Rapor şablonunun hazırlanması",
+      "channel": "",
+      "detail": "KPI'lar: Citation Rate, Share of Voice, AI Traffic, Conversion Rate, Sentiment Score dahil edilmeli.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ AI kaynaklı trafik, dönüşüm ve gelir metriklerinin derlenmesi",
+      "channel": "",
+      "detail": "GA4 AI trafik segmentinden veri çekilmeli; platform bazlı kırılım yapılmalı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ Önceki ay ile karşılaştırmanın yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "→ Aksiyon önerilerinin yazılması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İleri Strateji",
+      "tool": ""
+    },
+    {
+      "action": "Weekly AI Citation Tracking (Haftalık AI Atıf Takibi)",
+      "channel": "Site Dışı (AI Platformları)",
+      "detail": "Markanın AI yanıtlarında atıf sıklığının ve bağlamının haftalık takip edilmesi.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 3",
+      "priority": "Yüksek",
+      "task_type": "Raporlama",
+      "tool": "AI Visibility Tool, DataForSEO API"
+    },
+    {
+      "action": "→ Haftalık tracking sorgularının çalıştırılması",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Yeni atıf ve kayıp atıfların tespit edilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Atıf bağlamının (pozitif/negatif/nötr) analiz edilmesi",
+      "channel": "",
+      "detail": "Internal/external link'ler context-relevant olmalı, relevance high olmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Haftalık özet raporun hazırlanması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "Competitor Benchmarking Report (Rakip Kıyaslama Raporu)",
+      "channel": "Site Dışı (Rakipler)",
+      "detail": "Rakiplerin AI görünürlük değişimlerinin çeyreklik takip edilmesi ve kıyaslanması.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 3",
+      "priority": "Orta",
+      "task_type": "Raporlama",
+      "tool": "AI Visibility Tool, Ahrefs"
+    },
+    {
+      "action": "→ Rakip tracking listesinin güncellenmesi",
+      "channel": "",
+      "detail": "Bilgiler son güncel versiyona update edilmeli, stale data remove edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Share of Voice trend analizinin yapılması",
+      "channel": "",
+      "detail": "Gereken aksiyon uygulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Rakip stratejilerindeki değişikliklerin not edilmesi",
+      "channel": "",
+      "detail": "Clear strategy define edilmeli, timeline ve ownership specified edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Gap/fırsat analizinin güncellenmesi",
+      "channel": "",
+      "detail": "Veri analiz yapılmalı, insight'lar çıkarılmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "Brand Sentiment Tracking (Marka Algısı ve Sentiment Takibi)",
+      "channel": "Site Dışı (AI Platformları)",
+      "detail": "AI yanıtlarındaki marka algısının olumlu/olumsuz değişimlerinin izlenmesi.",
+      "owner": "PR / Analitik",
+      "phase": "Faz 3",
+      "priority": "Orta",
+      "task_type": "Raporlama",
+      "tool": "AI Visibility Tool"
+    },
+    {
+      "action": "→ Sentiment analiz metodolojisinin belirlenmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ AI yanıtlarındaki marka tonunun düzenli kontrol edilmesi",
+      "channel": "",
+      "detail": "İlgili alan kontrol edilmeli, accuracy ve currency doğrulanmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Olumsuz algı tetikleyicilerinin tespit edilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Düzeltici aksiyon planının oluşturulması",
+      "channel": "",
+      "detail": "Yeni bir sistem veya liste oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "Quarterly Schema & Content Audit (Çeyreklik Schema ve İçerik Denetimi)",
+      "channel": "Site İçi",
+      "detail": "Schema geçerliliği, içerik güncelliği ve AI bot erişim durumunun çeyreklik denetimi yapılması.",
+      "owner": "SEO + Dev",
+      "phase": "Faz 3",
+      "priority": "Yüksek",
+      "task_type": "Raporlama",
+      "tool": "Rich Results Test, Screaming Frog"
+    },
+    {
+      "action": "→ Schema doğrulama testlerinin çalıştırılması",
+      "channel": "",
+      "detail": "Functionality ve compatibility test edilmeli, edge case'ler cover edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Geçersiz veya eksik schema'ların düzeltilmesi",
+      "channel": "",
+      "detail": "Bu sub-step execute edilmeli, sonuçlar main task'ın completion'ı için critical'dır.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ İçerik freshness kontrolünün yapılması",
+      "channel": "",
+      "detail": "İlgili alan doğruluk için review edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ AI bot crawl erişim durumunun doğrulanması",
+      "channel": "",
+      "detail": "Sonuçlar verify edilmeli, success criteria check edilmeliydi.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Denetim raporunun hazırlanması ve aksiyon listesinin çıkarılması",
+      "channel": "",
+      "detail": "Plan, template veya dokümantasyon oluşturulmalıydı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "Podcast Transcript Publishing (Podcast Transkript Yayınlama)",
+      "channel": "Site İçi",
+      "detail": "Podcast ve webinar içeriklerinin transkripsiyonunun ayrı citation surface olarak yayınlanması. İyi hazırlanmış transkriptler bağımsız alıntı kaynakları olarak işlev görür.",
+      "owner": "İçerik Ekibi",
+      "phase": "Faz 3",
+      "priority": "Orta",
+      "task_type": "İçerik Stratejisi",
+      "tool": "-"
+    },
+    {
+      "action": "→ Podcast/webinar kayıtlarının transkript edilmesi",
+      "channel": "",
+      "detail": "Otomatik transkripsiyon araçları kullanılabilir ancak editoryal düzeltme şart.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Transkriptlerin bağımsız içerik sayfaları olarak yayınlanması",
+      "channel": "",
+      "detail": "Her episode için ayrı sayfa oluşturulmalı; heading yapısı ve özet bölümleri eklenmeli.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Schema markup eklenmesi (PodcastEpisode, VideoObject)",
+      "channel": "",
+      "detail": "PodcastEpisode veya VideoObject schema ile yapılandırılmış veri eklenmeli.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "→ Internal link ile ilgili sayfalara bağlanması",
+      "channel": "",
+      "detail": "Transkriptteki konularla ilgili mevcut sayfalara contextual link verilmeli.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "İçerik Stratejisi",
+      "tool": ""
+    },
+    {
+      "action": "Content Decay Monitoring (İçerik Aşınma Takibi)",
+      "channel": "Site İçi",
+      "detail": "AI görünürlüğü kaybeden sayfaların tespit edilmesi ve öncelikli güncellenmesi. İçerik eskidikçe AI atıf oranı düşer; proaktif takip gerekli.",
+      "owner": "SEO Ekibi",
+      "phase": "Faz 3",
+      "priority": "Yüksek",
+      "task_type": "Raporlama",
+      "tool": "AI Visibility Tool, GSC"
+    },
+    {
+      "action": "→ Aylık AI visibility tracking verilerinin karşılaştırılması",
+      "channel": "",
+      "detail": "Önceki ay verisiyle kıyaslama yapılarak düşüş trendi gösteren sayfalar tespit edilmeli.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Atıf kaybeden sayfaların tespit edilmesi",
+      "channel": "",
+      "detail": "AI prompt test kütüphanesindeki sonuçlarla cross-check yapılmalı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Rakip içeriklerle karşılaştırma yapılması",
+      "channel": "",
+      "detail": "Atıf kaybedilen sorgularda şimdi hangi rakip/kaynak atıflanıyor analiz edilmeli.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    },
+    {
+      "action": "→ Öncelikli güncelleme planının oluşturulması",
+      "channel": "",
+      "detail": "En yüksek trafik/dönüşüm potansiyelli sayfalar öncelikli güncelleme listesine alınmalı.",
+      "owner": "",
+      "phase": "Faz 3",
+      "priority": "",
+      "task_type": "Raporlama",
+      "tool": ""
+    }
+  ],
+  "source_sheet": "E-Ticaret",
+  "version": "1.0.0"
+}

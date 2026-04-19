@@ -1,0 +1,209 @@
+{
+  "items": [
+    {
+      "estimated_time": "",
+      "guides": "Buna 1 saat video çekilir/worth it",
+      "questions": "1) Kategoriye göre rakipler değişiyor olabilir mi?, Hedeflediğim kategorilerde rakiplerim kimler?\n2) Rakiplerimin sıralama aldığı fakat benim sıralama almadığım non-branded kelimeler neler?\n3) En çok hangi non-brand kelimelerden trafik alıyorlar? \n4) En çok hangi tip sayfalara organik trafik çekiyorlar? (Ürün, kategori vb. Ahrefs'ten bakılabilir)\n5) Rakiplerim en çok referral trafiği hangi sitelerden alıyor?, sosyal medyada en çok trafik aldığı kanallar neler? (Similarweb'ten bakılabilir, nice to know)\n6) Rakiplere göre ürün gamı olarak güçlü olduğum fakat sıralamada geride kaldığım kategoriler var mı, neden?",
+      "task": "Rakip Analizi",
+      "type": "Strategy & Planning"
+    },
+    {
+      "estimated_time": "",
+      "guides": "https://backlinko.com/keyword-research\nhttps://ahrefs.com/blog/keyword-research/\n\nBuna 1 saat video çekilir/worth it",
+      "questions": "1) Kelimeleri nasıl gruplarsam ileride raporlama tarafında işimi kolaylaştırırım? Aynı kelime birden fazla grupta olmalı mı? (gruplama mantığı baştan netleştirilirse işi kolaylaştırır)\n2) Mevcutta hangi kelimelerde listeleniyorum?\n3) SEO'da hedeflerimiz neler / ne olmalı?\n4) Arama hacmi yüksek en öncelikli kelimeler neler?, Kullanıcı tarafında farklı aramaları var mı?\n5) Bu hacmi yüksek kelimelerin long tail aramaları neler? (markanın sattığı ürün gamına fit etmeli)\n6) Seçtiğim kelimelerin intent'i hedeflememe uygun mu, arama hacmi yüksek ve sıralama alamayacağım gereksiz kelimeler var mı?\n7) Arama hacmi 0 olan gereksiz kelimeler takip ediyor muyuz?\n8) En çok trafik aldığımız non-branded kelimeler neler, takip ediyor muyuz?\n9) Rakiplerim kimler?, Kategoriye göre değişiyor olabilir mi?, Onlar hangi kelimelerde listeleniyor?",
+      "task": "Anahtar kelime araştırması & gruplama",
+      "type": "Strategy & Planning"
+    },
+    {
+      "estimated_time": "",
+      "guides": "Videosu var, gerekiyorsa remake yoksa mevcut kaynaklardan devam",
+      "questions": "1) Kategori sezonsallığı nasıl değişiyor, son 4 yılda trendler nasıl değişmiş? \n2) Önümüzdeki 3/6 ay peak edecek kategorilerim neler? Aylık kırılımda hangi kategoriler diğerlerine göre öne çıkacak ve önceliklendireceğim?\n3) YoY'da diğerlerine göre fazla büyüyen/küçülen kategoriler neler?\n4) Marka & rakip jenerik arama hacmi değişimi/trend nasıl?\n5) Marka + kategori bilinirlikleri rekabette olunan firmalara kıyasla nasıl?\n6) İlgili kategorilerde Google'da ilk 10'da listelenen rakipler kimler, göze çarpan/farklı gelen var mı?",
+      "task": "Market Research",
+      "type": "Strategy & Planning"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Proje kurulumunda lokasyon ve brand name'leri doğru tanımladık mı?\n2) Search Console ve Google Analytics bağlı mı? Özellikle Analytics verilerini karşılaştırıp doğru hesabı bağladığımızı teyit ettik mi?\n3) Markanın ani Visibility değişimi için alert kuruldu mu?\n4) Rakipler kategorilere göre ayrıca incelenip düzenlendi mi?\n5) Öncelikli kelimeler için \"Desired Page\"ler dolduruldu mu?\n6) Desktop ve Mobile Visibility Score arasında büyük bir fark var mı? Mobilde ya da Desktop'ta ekstra bir şeyleri kaçırıyor olabilir miyim? (uyumluluk, hız, parity problemi vb.)",
+      "task": "SEOmonitor",
+      "type": "Strategy & Planning"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Gruplar içerisindeki kelimeleri manuel inceledik mi? Mantıksız ve forecast'e dahil etmememiz gereken kelime var mı? (arama hacmi yüksek ilk sıralara çıkamayacaklar yanıltır)\n2) Hedeflemeleri koyarken kelime gruplarındaki mevcut Visibility'lere göre mantıklı hedefler mi koyduk? (Örn. grup visibility %0'dır, ilk 3 hedefi koymak demek %85 visibility'e çıkmak anlamına gelir. gerçekten tutabilecek şeyler mi hedefliyoruz?)\n3) Aylık hedefin %kaçına erişebileceğimizi manuel gözden geçirdik mi? Aylık kırılımda trafik artışı gerçekçi mi, hedefleme ayarlarını güncelleyerek daha güvenilir sonuç elde edebilir miyiz?\n4) Kategorilere hedef koyarken mevcut ürün gamı ve genişliğini göz önünde bulundurduk mu? Baştan konuşmamız ve ürün tedariği ile desteklenmesini önereceğimiz şeyler var mı?\n5) Hesaplama analizi ve kelime detayındaki tahminlemelere baktığımızda anormal bir veri görüyor muyuz? Hesaplama dışında bırakmamız gereken bir şey var mı?",
+      "task": "Forecast",
+      "type": "Strategy & Planning"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Çıkardığımız işlerin bizim, markanın ve yazılımın tarafındaki tahmini eforu ne kadar? Yazılım tarafında işin yapılabilirliği nedir? Impact'i ne olacak? \n     Bu 3 soruya göre çıkarılan işlerin önceliklendirilmesi belirlenir. \n2) İşlerin Estimated Time'ları bizim tarafta ayrılması gereken efora göre doğru bir şekilde yazıldı mı?\n3) Rutin'de ilerleyecek taskları farklı satırlar ve due date'ler olacak şekilde tekrarlı yazdık mı? Tahminlenecek total süreye dahil edildi mi?",
+      "task": "Roadmap oluşturma",
+      "type": "Strategy & Planning"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Cannibalization problemleri var mı?\n2) Markanın kampanya dönemleri neler, hangi dönemde en çok hangi ürün gamlarını satıyor? Buna uygun içerik backlink stratejisi çalıştık mı?\n3) Impression'ı yüksek tıklaması düşük kelimeler neler ve hangi sayfalar ile eşleşiyor? Title & Description optimizasyonu ile daha fazla tıklama alabilir miyiz?\n4) Öncelikli kategorilere harcanan reklam bütçesi yüksek mi? Organiğin CTR'ından çalıyor mu? Organikte geride kaldığımız Ads tarafına oynaması için önerebileceğimiz kategoriler var mı?\n5) Markanın ürün gamı o kategoriyi hedeflemek için yeteri kadar geniş mi? \n6) Markanın öne çıkmak istediği kategoriler ile beraber anılması nasıl? Rakipleriyle kıyasladığımızda nerede kalıyor?\n7) Duplicate Title & Description & Content var mı? Duplicate durumu yaratan tüm sayfalar index'e açık mı? \n8) Yaklaşan özel gün var mı? Sayfa & içerik optimizasyonu yaptık mı? Backlink takvimi hazırlandı mı?",
+      "task": "Genel Analizler & Sorular",
+      "type": "Analysis & Reporting"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) SEOmonitor projesi doğru bir biçimde kuruldu mu? Öncelikli kelimeleri gruplu bir şekilde doğru takip ediyor muyuz?\n2) Kelime sıralaması, Visibility Score, Brand / Non-brand trafik haricinde bu marka için önemli olabilecek metrikler var mı? KPI'larımız neler? Neyi yaparsak bu projede başarılı oluyoruz?\n3) GTM üzerinden ne tip event'ler atılıyor, raporlama tarafında özellikle içerik performansı değerlendirmek vb. şeyler için faydalanabileceğimiz metrikler var mı?\n4) İki dönemi birbiri ile kıyaslayıp yorum yaparken aynı zamanda kategori ve markanın sezonsallığını da göz önünde bulunduruyor muyuz?\n5) Market Research verilerini güncelledik mi? Rekabet arama hacmi kıyaslamaları güncel mi?\n6) En çok kazandıran / kaybettiren kelimeler neler? Optimize etmemiz gereken sayfalar var mı?\n7) Analizler sonucunda çıkan fırsatlar var mı? Markayla paylaşıp next step koymaya çalışıyor muyuz?",
+      "task": "Raporlama",
+      "type": "Analysis & Reporting"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Aynı kelimeyi hedefleyen ve benzer ürünler listelediğim kategorilerim var mı? Canonical & kategori birleştirme gibi bir yöntem faydalı olur mu?\n2) Rakiplerimin iyi performe ettiği fakat benim geride kaldığım kategoriler neler? Elimde ürün var fakat kategori olmadığı için listelenmiyor olabilir miyim?\n3) Ürün sayfasıyla eşleşen kelimelerim neler? Buralardan kategori sayfası ile hedefleyebileceğim kelimeler bulabilir miyim? \n4) Ürün gamına uygun bir alt kategorizasyon yapılmış mı? Kategori ile beraber yapılan diğer aramalardan alt kategori fırsatı çıkarabilir miyim?\n5) Multi-brand ise marka + kategori aramalarını nasıl hedefliyorum? Aramaları karşılayan sayfalar var mı ve bunları kategori ağacında değerlendirebilir miyim?\n6) Mevcutta iyi sıralama alamadığım ve kategori ağacı nedeniyle ilk sıralara çıkamayacağım kelimeler neler? Bunlar üzerinden ilerleyerek yeni öneriler çıkarabilir miyiz?",
+      "task": "Kategori ağacı optimizasyonu",
+      "type": "Informational Architecture"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) CSS, JS, Cookie'ler kapatıldığında sayfadaki önemli içeriklere erişilebiliyor mu? (kategori içeriği, ürün adı, fiyat vb. elementler olabilir)\n2) JS kapatıldığında navigasyon & widget içerisinden verilen linkler çalışıyor mu? JS ile tetiklenen linkler var mı? Googlebot tarayabiliyor mu?\n3) Toplam index'lenen sayfa sayısı \n4) Sitemap.xml içerisinde verilen fakat index'lenmeyen URL'ler var mı?\n5) Canonical'ı sayfanın kendisini işaret etmeyen URL'ler neler, kurallar doğru mu?\n6) Noindex etiketi olan sayfalar var mı? Bu sayfalar içerisinden indexletmemiz gereken sayfa olabilir mi?\n7) Özelleştirilmiş, anasayfa & öncelikli kategorilere kullanıcıyı yönlendiren bir 404 sayfası var. mı?\n8) Googlebot sayfaları doğru bir şekilde tarayabiliyor mu? Mobile Friendly Test & Inspection tool üzerinden inceledik mi?\n9) Ajax kullanılıyor mu? Ajax ile çağırılan içerik index'lenmiş mi?",
+      "task": "Accessibility & Indexability kontrolü",
+      "type": "Tech. SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1)Kategori sayfalarımız orantılı internal link alıyor mu? Sitemizde en çok internal link verdiğimiz sayfa anasayfa mı?\n2) Alt kategorilere link çıkışı sağlayabiliyor muyuz?\n3) Özel sayfalar internal link alıyor mu, site içerisinden erişilebilir mi?\n4) İçeriklerde cross linking çalışılmış mı?\n5) Breadcrumb'tan kategorilere verilen internal linkler mantıklı mı? Hatalı URL var mı?\n6) Header ve Footer'da statik sayfalara nofollow etiketi eklenmiş mi? Fazla internal link verdiğimiz gereksiz sayfalar var mı?\n7) Search Console'dan en çok internal Link alan sayfalara baktık mı? Gereksiz link alan ya da link almayan sayfalar var mı?\n8) Google önemli internal linkleri tarayabiliyor mu? Javascript'e bağlı çalışan, html'de yer almayan internal link'ler var mı?\n9) Site içi kırık & redirect alan linkler var mı? Direkt olarak ilgili sayfaya link verilmesi için yapılabilecek düzenlemeler var mı?",
+      "task": "Internal Linking",
+      "type": "Tech. SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Google ortalama ne kadar sayfa tarıyor, sitemizdeki sayfa sayısına göre orantıda olmaması gereken bir durum var mı?\n2) Google sayfaları Crawl etmek için çok fazla zaman harcıyor mu? Sayfaları taramasını zorlaştıran sunucu tarafıyla alakalı bir problem olabilir mi? \n3) Log analizi yaptık mı? Bu hacimdeki bir web sitesi için ne kadar sürede bir log analizi yapmak gerekir?\n4) Hiç trafik almayan index'li sayfalarım neler? Noindex versem ya da Canonical ile Google'a tarama desem Crawl Budget'ı optimize edebilir miyim?\n5) Index'li subdomain'ler neler, indexletmemize gerek var mı? \n6) http & www yönlendirme kurguları doğru çalışıyor mu? Trailing slash optimizasyonu gerekiyor mu? Bu vb. sebeplerden duplication olabilir mi?\n7) Siteye gelen botlar ve kullanıcı aynı içeriği mi görüyor?\n8) Eskiden kalan sayfalar var mı? Analytics ya da Search Console'dan tüm URL'leri çekip status code'ları ile beraber incelediğimizde ilgili sayfalara Redirect edebileceğimiz URL'ler bulabiliyor muyuz?\n9) Header ya da footer'daki herhangi bir link sayfaya return parametresi atarak bulunan path'e göre yeni URL oluşturuyor mu? Bu parametreleri engelledik mi?\n10) Stock out ürünleri nasıl yönetiyoruz?, Stoğu bir daha hiç gelmeyecek ürünler neler?, Bu sayfaları ilgili hangi ürün ya da kategori sayfalarına yönlendirmeliyiz? \n11) Stock out ürünlerde ürün attribute'larından faydalanarak kurala bağlı redirect kurguları hazırlayabilir miyiz?\n12) Site içerisinden linklenmeyen fakat Google'da index'li ya da Sitemap üzerinden verdiğimiz orphaned page'ler var mı? Orphaned sayfalar bir amaca hizmet ediyor mu, kapatabilir miyiz?",
+      "task": "Crawling & Crawl Budget optimizasyonu",
+      "type": "Tech. SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "https://support.google.com/webmasters/thread/86521401/core-web-vitals-page-experience-faqs?hl=en",
+      "questions": "1) Chrome UX Dashboard (Datastudio raporu) oluşturuldu mu? Rakiplere göre Desktop ve Mobile'da geride kaldığımız metrikler neler?\n2) Search Console'da CWV metrikleri kontrol edildi mi? Majör probleme sebep olabilecek bir şey var mı?\n3) Görsel formatları ya da size'larda optimizasyon fırsatı var mı?\n4) JS & CSS boyutlarında optimize edilebilecek şeyler var mı? Hangilerini yazılıma yaptırabiliriz?\n5) Gereksiz tekrarlı yüklenen js, css, image var mı?\n6) Sayfanın front-end'inde herhangi bir şekilde bulunmayan ya da etki etmeyen görseller/kaynaklar sayfa açılışında yükleniyor mu?\n7) CLS'i negatif etkileyebilecek elementler neler? Reco çalışıyor mu düzeltme lazım mı?, Sayfaya sonradan gelen bir pop-up, kampanya mesajı var mı CLS'i negatif etkiliyor olabilir mi?\n8) INP metriği için inceleme gerçekleştirildi mi, optimizasyon fırsatlarımız neler?",
+      "task": "Core Web Vitals / Site Hızı",
+      "type": "Tech. SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Domain'in farklı versiyonları için Search Console kurulmuş mu? (http,https,www,non-www), DNS ile ayrıca kurulu mu? \n2) Google Search Console ilgili diğer platformlar ile linkli mi? (Analytics, Youtube) (linkleme yapabilmek için domain'in o versiyonu özelinde Search Console owner'ı olunması gerekir)\n3) Daha önceden yapılmış URL Removals var mı, var ise hangi sayfalara ve mantıklı mı?\n4) URL Parametreleri doğru bir şekilde tanımlanmış mı? Gereksiz parametreler engelli mi ve parametrelerin ne işe yaradığı Google'a verilmiş mi?\n5) Site daha önce manuel action ya da security issues'a maruz kalmış mı?\n6) Googlebot Crawlrate'te bir değişiklik yapılmış mı? Google'a bırakmakta fayda var!",
+      "task": "Google Search Console ayarları",
+      "type": "Tech. SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Sitemap.xml robots.txt içerisinde yer alıyor mu? Search Console üzerinden Submit edilmiş mi?\n2) Sitemap formatı Google'ın istediği biçimde mi, hata/eksik var mı?\n3) Sitemap.xml ürün, kategori, anasayfa & statik sayfalar, özel sayfalar gibi bölümlere ayrılmış mı?\n4) Sitemap'ler içerisindeki priority, change değerleri doğru mu? (Google bunu bir süredir takip etmiyor diye biliyorum, research edip gerekli değilse brief'te vermeyebiliriz artık)\n5) Sitemap içerisindeki linkler ile sitede listelenen linkler aynı mı? (Özellikle ürün, kategori gibi kıyaslayıp karşılıklı Vlookup atarak incelenebilir) Dinamik çalışıyor mu?\n6) Status code'u 200 olmayan sayfalar var mı? (404, 301, 500, 302, 307 vb.) \n7) Noindex etiketi olan & Robots.txt'den engellenmiş sayfalar var mı? Indexlenmesini istemediğimiz fakat Sitemap içerisinde yer alan URL'ler neler?\n8) Google Sitemap.xml yerine URL'leri API ile pingleyebilirsiniz gibi bir şey çıkardı. Yazılım tarafında gerçekçi olur mu, kullanmayı düşünür müyüz?",
+      "task": "Sitemap.xml kontrolü & oluşturulması",
+      "type": "Tech. SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Sitede Crawl Budget'ı negatif etkileyebilecek path'ler var mı? Robots.txt üzerinden engellenmiş mi?\n2) Robots.txt içerisinde Sitemap.xml yer alıyor mu?\n3) Filtre sayfaları Robots.txt üzerinden taramaya kapatılmış mı?\n4) Ads botların engellenmemesi için ilgili satırlar eklenmiş mi?\n5) Robots.txt güncelleme sonrası Search Console üzerinden test ettik mi? Engellediğimiz path'lerden örnek sayfaları URL alanına koyup taramaya açık olup olmadığına baktık mı?",
+      "task": "Robots.txt",
+      "type": "Tech. SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Sayfalarımda Canonical tag'i var mı, sayfanın doğru versiyonunu işaret ediyor mu (https, www)? \n2) Indexlenmesini istemediğim parametreli sayfalar var mı (filtre, ürün varyantı vb.) Canonical tag'leri sayfanın pretty url'ini işaret ediyor mu?\n3) Pagination etiketleri doğru mu? Bazen kategorinin 2. sayfasının prev tag'i ?page=1'i işaret eder. Bazen sayfalama biter pagination bitmez, infinity'e gider. 2. ve son sayfaları özellikle kontrol ettik mi?",
+      "task": "Canonical & Pagination",
+      "type": "Tech. SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Search Console'da önceden yüklü bir disavow dosyası var mı? Disavow dosyasını biz oluşturmadıysak içindeki domain'ler doğru mu?\n2) Toxic Backlink var mı? SEMrsuh'ta Toxic görünen domain'ler neler? Backlink aldığımız yerlerde DR çok düşük/adult/spam içerikli siteler var mı?\n3) 200 status kodu hariç sayfaları işaret eden (404/301/500) backlinkler var mı?",
+      "task": "Backlink analizi",
+      "type": "Off-page SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Rakiplerin Backlink aldığı bizim almadığımız otoriter siteler neler?\n2) Hedef kelimelerde veya ilgili kelimelerinde önde listelenen siteler neler ve içlerinde backlink alabileceğim kaliteli siteler var mı?\n3) Backlink aldığım site ilgili bir kategoride mi? Alakasız bir kategoriye hizmet ediyorsa faydası olmayabilir ya da ileride problem yaratabilir.\n4) Marka adımın geçtiği fakat bana henüz link vermemiş yerler var mı, iletişime geçip hazır içeriklerden link alabilir miyim?\n5) Markanın hali hazırda paylaştığı bültenler vs. var mı? Link almak için kullanabilir miyiz?\n6) Rakiplerimin benden önde olduğu kelimelerde listenen sayfaları nerelerden ve hangi kw'lerden link almış?",
+      "task": "Backlink çalışması",
+      "type": "Off-page SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Sayfa hızını negatif etkileyen gereğinden büyük banner, slider, ürün görseli var mı? 3th party kullanılıyor mu CLS problemi olabilir mi? \n2) Anasayfada marka adı H1 olarak tanımlı mı? İçerik var mı, içerikten ilgili kategorilere anchor text ile link veriliyor mu?",
+      "task": "Anasayfa",
+      "type": "On-page SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Kategori adı doğru verilmiş mi? Kullanıcıların daha fazla aradığı benzer kelime var mı?\n2) URL yapısı doğru mu? Kurala bağlı mı güncellemeliyiz, bu durumda farklı tipte kategoride olan ürünlerde kural nasıl çalışacak? Kurguladığımız mantığa ters düşen senaryo var mı?\n3) Kategori URL'lerinin çokladığı ya da verdiğimiz kurala uymadığı bir durum var mı? Sona -1, -2 gelmesi vb.\n4) Meta Title & Description'lar kategori sayfasının hedeflemesi gereken ana kelimelere hizmet ediyor mu?\n5) Breadcrumb yapısı doğru çalışıyor mu?\n6) Google'ın yeni getirdiği elementlerden Title'ı belirlemesi durumunda sıkıntı olabilecek bir şey var mı? Hx tag'leri, Breadcrumb, URL, Anchor Text'ler vs.\n7) Ürünlere ait Image alt tag kuralı doğru çalışıyor mu? Ürün adı ve diğer spesifikleştiren bilgiler (ml, renk, kg vs vs.) image alt tag'de geçiyor mu?\n8) Sayfa hızına negatif etki edecek büyük ürün & banner görseli, CLS problemi yaratabilecek sonradan yüklenen recommendation vb. bir durum var mı? Lazy Load kullanılıyor mu?\n9) Ürün görselleri Desktop & Mobile için ayrı ayrı boyutlandırılmış mı?\n10) Kategori içeriği var mı? İçerikte H etiketi hiyerarşisi doğru mu? Hedef ve ilgili olabilecek semantik kelimeler kullanılmış mı? \n11) İçerikten ilgili diğer kategorilere internal link çıkışı var mı?\n12) Kategori içeriği paginated sayfalarda da var mı? Bu cannibalization problemi yaratıyor olabilir mi? Paginated sayfalardaki div alanını kaldırmalı mıyız?",
+      "task": "Kategori Sayfası",
+      "type": "On-page SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Sayfa adı ve URL'i doğru mu? Kullanıcıların daha fazla aradığı benzer kelime var mı?\n2) Benzer kelimeleri hedeflediği kategori veya koleksiyon sayfası var mı? Hangisi ile ilerlemek daha mantıklı?\n3) Kullanılmayan, boş koleksiyon sayfaları var mı? Hangilerini pasife alıp ilgili sayfaya 301 redirect edebiliriz?\n4) Meta Title & Description'lar kategori sayfasının hedeflemesi gereken ana kelimelere hizmet ediyor mu?\n5) Breadcrumb yapısı doğru çalışıyor mu? Panelde alan açtırıp Breadcrumb'ı oradan kendimiz map'leyebilir miyiz?\n6) Ürün gamının karşıladığı fakat sıralama alamadığımız kelimeler var mı? Koleksiyon sayfası oluşturarak hedeflemek mantıklı olur mu?\n7) Google'ın yeni getirdiği elementlerden Title'ı belirlemesi durumunda sıkıntı olabilecek bir şey var mı? Hx tag'leri, Breadcrumb, URL, Anchor Text'ler vs.\n8) Ürünlere ait Image alt tag kuralı doğru çalışıyor mu? Ürün adı ve diğer spesifikleştiren bilgiler (ml, renk, kg vs vs.) image alt tag'de geçiyor mu?\n9) Sayfa hızına negatif etki edecek büyük ürün & banner görseli, CLS problemi yaratabilecek sonradan yüklenen recommendation vb. bir durum var mı? Lazy Load kullanılıyor mu?\n10) Ürün görselleri Desktop & Mobile için ayrı ayrı boyutlandırılmış mı?\n11) Sayfanın hedeflediği kelimenin total hacmi nasıl? İçerik yazdırmaya değer mi? İçerikte H etiketi hiyerarşisi doğru mu? Hedef ve ilgili olabilecek semantik kelimeler kullanılmış mı? \n12) İçerikten ilgili diğer kategori & koleksiyonlara internal link çıkışı var mı?\n13) Sayfa içeriği paginated sayfalarda da var mı? Bu cannibalization problemi yaratıyor olabilir mi? Paginated sayfalardaki div alanını kaldırmalı mıyız?",
+      "task": "Koleksiyonlar",
+      "type": "On-page SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1)Ürün attribute'ları neler, ERP/CRM'den doğru bir şekilde geliyor mu? Ürün isminde Renk, Cinsiyet, Desen vb. ayrıştırıcı bilgiler var mı?\n2) Multi-brand ise ürün sayfasından markaya internal link var mı?\n3) URL yapısı doğru mu? Kurala bağlı mı güncellemeliyiz, bu durumda farklı kategorilere ait ürünlerde URL nasıl oluşacak? Örnekleri neler, kurguladığımız mantığa ters düşen şeyler var mı?\n4) Ürün URL'lerinin çokladığı ya da verdiğimiz kurala uymadığı bir durum var mı? Sona -1, -2 gelmesi vb.\n5) Meta Title & Description kuralları doğru çalışıyor mu? Ürünün diğer varyantlarının da ayrı URL'leri var ise meta'lar ayrışıyor mu yoksa duplicate problemi mi yaratıyor? \n6) Ürünün breadcrumb'ı doğru mu? İlgili en alt kategoriyi ve bulunduğu path'i doğru bir şekilde işaret ediyor mu?\n7)Google'ın yeni getirdiği elementlerden Title'ı belirlemesi durumunda sıkıntı olabilecek bir şey var mı? Hx tag'leri, Breadcrumb, URL, Anchor Text'ler vs.\n8) Ürün içerikleri birbirinden ayrışıyor mu? Aynı model ürünlerde duplication problemi var mı?\n9) Ürünlere ait Image alt tag kuralı doğru çalışıyor mu? Ürün adı ve diğer spesifikleştiren bilgiler (ml, renk, kg vs vs.) image alt tag'de geçiyor mu?\n10) Sayfa hızına negatif etki edecek büyük ürün görseli, CLS problemi yaratabilecek sonradan yüklenen recommendation vb. bir durum var mı? Lazy Load kullanılıyor mu?\n11) Ürün görselleri Desktop & Mobile için ayrı ayrı boyutlandırılmış mı?",
+      "task": "Ürün sayfası",
+      "type": "On-page SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Website & Organization schema sadece anasayfa veya statik bir kaynak kodunda mı doğru çalışıyor mu? \n2) Breadcrumb Schema markup kuralları doğru tanımlanmış mı? Koleksiyon sayfalarında hata veriyor mu?\n3) Product Schema markup kuralları doğru tanımlanmış mı? Birkaç farklı kategoriye ait üründen farklı örnekler inceledik mi, gelen bilgiler mantıklı mı?\n4) Search Console'da Structured Data hataları var mı? Varsa neler, kurala bağlı ciddi bir problem mi?\n5) Kod bloklarını structured data testing tool'dan geçirdik ve syntax hatası vb. herhangi bir problem olmadığına emin miyiz?\n6) Sitede video content var mı? Structured data eklesek faydası olur mu?\n7) Open graph tag kuralları doğru çalışıyor mu?\n8) Sitede FAQ vb. soru-cevap odaklı markup'lar kullanabileceğim içeriğim var mı? Hangi sayfalara eklenmeli?",
+      "task": "Structured Data",
+      "type": "Tech. SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Öne çıkmak istediğimiz kelimelerde içerik tipi ne? Hangi intent'e hizmet ediyor?\n2) Bizim için önemli olan (non-brand kelimeleri hedefleyebileceğimiz) sayfalarda içerik eksiği var mı? Kategori ve ürün sayfalarında içerik bulunuyor mu?\n3) Özel günler için sayfalar önden oluşturuldu mu? İçerik girildi mi?\n4) Tematik sayfa fırsatları var mı? Konularda arama hacimleri neler? Markaya öneriler çıkarabiliyor muyuz? (Sütyen bedeninizi nasıl anlarsınız vb.)\n5) Sitedeki duplicate'ler content'ler neler, canonical, noindex, 301 gibi aksiyonlar almamızı gerektirecek bir durum var mı? \n6) SERP Feature fırsatları var mı? Farklı bir içerik tipi üreterek hedefleyebileceğimiz kelimeler var mı?",
+      "task": "İçerik",
+      "type": "Content"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Statik sayfalara nofollow etiketi eklenmiş mi?\n2) Footer'dan verilen internal link'lerde http & kırık link var mı?\n3) Footer'da görsel var mı, Desktop ve Mobile için doğru boyutlandırılmış mı?\n4) Http ya da Redirect alan sayfalara link çıkışı var mı?",
+      "task": "Footer",
+      "type": "On-page SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) Kategori hiyerarşisi doğru bir şekilde verilmiş mi? Navigasyondan link verilmeyen kategoriler var mı?\n2) Navigasyondan link verdiğimiz sayfalarda 200 hariç status kodu olanlar var mı?\n3) Navigasyonda bulunan fakat içerisinde ürün bulunmayan kategoriler neler?\n4) Navigasyondaki görsellerin boyutları cihaza göre uygun bir biçimde boyutlandırılmış mı?\n5) Benzer ürünlerin listelendiği farklı kategorilere verilen linkler var mı? Ürün sayıları tutarlı mı? Kategori tarafında alınması gereken bir aksiyon olabilir mi?",
+      "task": "Navigasyon",
+      "type": "On-page SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "",
+      "questions": "1) 200 status code vermeyen sayfalar neler? 3xx, 4xx, 5xx status code dönen sayfalar değerli mi yoksa yönlendirmek yeterli mi?\n2) En çok hangi sayfalar taranıyor, bizim öne çıkarmak istediğimiz sayfaların taranma sıklığı ortalamaya göre nasıl?\n3) Botların taramasını istemediğimiz gereksiz sayfalar var mı ve ne kadar taranıyor? Robots.txt ya da URL parametrelerinden engellememiz gereken bir şeyler var mı?\n4) Sayfaların response time'ının yüksek olduğu durumda Googlebot'un 4xx,5xx hatası aldığı sayfalar var mı? \n5) Sitemap.xml içinde bulunan URL'lerin yanına, çıkan tarama verisini çekip taranmayan URL'ler var mı diye kontrol ettik mi?",
+      "task": "Log analizi",
+      "type": "Tech. SEO"
+    },
+    {
+      "estimated_time": "",
+      "guides": "https://www.screamingfrog.co.uk/how-to-perform-a-parity-audit/",
+      "questions": "1) Sayfa tiplerine göre (ürün, kategori, anasayfa, koleksiyon) desktop ve mobile içeriğin aynı olduğunu teyit ettik mi?",
+      "task": "Desktop & Mobile Parity",
+      "type": "Tech. SEO"
+    }
+  ],
+  "source_sheet": "E-commerce Checklist",
+  "version": "1.0.0"
+}
