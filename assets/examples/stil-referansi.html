@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Örnek — Stil Referansı</title>
+  <style>
+    /* buraya brand.css'in tümü kopyalanır */
+    /* kopyalamak yerine skill runtime'da template ile birleştirilir;
+       bu dosya sadece dizayn sanity-check için */
+    @import url('../brand.css');
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">Inbound</div>
+      <nav>
+        <ul>
+          <li><a href="#ozet" class="active">Yönetici Özeti</a></li>
+          <li><a href="#metrikler">Metrikler</a></li>
+          <li><a href="#teknik">Teknik SEO</a></li>
+        </ul>
+      </nav>
+      <div class="meta">
+        ornekmarka.com.tr<br>
+        2026-04-19
+        <div class="mode-badge">PITCH · SEO+GEO</div>
+      </div>
+    </aside>
+    <main>
+      <section id="hero"><h1>Ornek Marka</h1><p style="color:var(--color-muted)">SEO & GEO Ön Analiz — 2026-04-19</p></section>
+      <section id="ozet">
+        <div class="section-header"><span class="num">1</span><h2>Yönetici Özeti</h2></div>
+        <p>ornekmarka.com.tr üzerinde yürütülen ön denetimde, marka organik görünürlüğünün rakiplere kıyasla gelişim alanına sahip olduğu gözlemlenmektedir.</p>
+        <div class="callout"><strong>Önerilen odak:</strong> Lokal görünürlük ve içerik derinliği.</div>
+      </section>
+      <section id="metrikler">
+        <div class="section-header"><span class="num">2</span><h2>Temel Metrikler</h2></div>
+        <div class="kpi-strip">
+          <div class="scorecard"><div class="label"><span class="term" data-term="DR">DR</span></div><div class="value">18</div><div class="trend">Rakip ort. ~34</div></div>
+          <div class="scorecard"><div class="label">Organic Traffic</div><div class="value">2.1K</div><div class="trend">Rakip ort. ~18K</div></div>
+          <div class="scorecard"><div class="label">Keywords</div><div class="value">847</div><div class="trend">İlk 10: 42</div></div>
+          <div class="scorecard"><div class="label">Referring Domains</div><div class="value">156</div><div class="trend">Son 3 ay: +12</div></div>
+        </div>
+      </section>
+      <section id="teknik">
+        <div class="section-header"><span class="num">3</span><h2>Teknik SEO Durumu</h2></div>
+        <div class="finding-card priority-critical">
+          <div class="priority-badge critical">Öncelikli</div>
+          <h3>Ana Sayfa <span class="term" data-term="H1">H1</span> Konumlandırması</h3>
+          <p>Ana sayfada H1 etiketinin konumlandırılmasında ele alınabilecek bir nokta öne çıkmaktadır.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    // Minimal tooltip
+    document.querySelectorAll('.term').forEach(el => {
+      const tip = document.createElement('span');
+      tip.className = 'term-tooltip';
+      tip.textContent = 'Örnek tanım — runtime'da glossary'den gelir.';
+      el.appendChild(tip);
+    });
+  </script>
+</body>
+</html>
