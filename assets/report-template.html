@@ -10,7 +10,7 @@
   <div class="app">
     <aside class="sidebar">
       <div class="brand">Inbound</div>
-      <nav>
+      <nav aria-label="Rapor bölümleri">
         <ul>
           <li><a href="#ozet" data-section="ozet">Yönetici Özeti</a></li>
           <li><a href="#metrikler" data-section="metrikler">Temel Metrikler</a></li>
@@ -94,6 +94,8 @@
     </main>
   </div>
 
+  <!-- SECURITY: {{GLOSSARY_JSON}} must be pre-escaped by the generation script:
+       any literal '</script>' sequence in glossary values must be rendered as '<\/script>'. -->
   <script>
   // Scroll spy + tooltip
   const glossary = {{GLOSSARY_JSON}};
@@ -104,9 +106,18 @@
     tip.className = 'term-tooltip';
     tip.textContent = glossary.terms[termKey];
     el.appendChild(tip);
+    el.setAttribute('tabindex', '0');
+    el.setAttribute('role', 'button');
+    el.setAttribute('aria-label', `${termKey} teriminin açıklamasını göster`);
     el.addEventListener('click', e => {
       e.stopPropagation();
       el.classList.toggle('active');
+    });
+    el.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        el.classList.toggle('active');
+      }
     });
   });
   document.body.addEventListener('click', () => {
@@ -115,15 +126,17 @@
 
   // Scroll spy
   const navLinks = document.querySelectorAll('.sidebar nav a');
-  const sections = document.querySelectorAll('main section[id]');
+  const sections = document.querySelectorAll('main section[id]:not(#hero)');
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        navLinks.forEach(l => l.classList.remove('active'));
-        const link = document.querySelector(`.sidebar nav a[data-section="${e.target.id}"]`);
-        if (link) link.classList.add('active');
-      }
-    });
+    const intersecting = entries.filter(e => e.isIntersecting)
+      .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+    if (intersecting.length) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const link = document.querySelector(
+        `.sidebar nav a[data-section="${intersecting[0].target.id}"]`
+      );
+      if (link) link.classList.add('active');
+    }
   }, { rootMargin: '-40% 0px -55% 0px' });
   sections.forEach(s => observer.observe(s));
   </script>

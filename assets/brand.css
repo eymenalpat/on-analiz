@@ -7,6 +7,8 @@
   --color-accent: #FF7B52;
   --color-soft-green: #A0B7AB;
   --color-muted: #6E6C83;
+  --color-priority-high: #D4843E;
+  --color-priority-high-soft: #FFD4B3;
   --color-bg: #FEFFFA;
   --color-surface: #FFFFFF;
   --color-border: #E3E9E7;
@@ -98,14 +100,14 @@ section { padding-bottom: var(--space-16); }
   box-shadow: var(--shadow-sm);
 }
 .finding-card.priority-critical { border-left-color: var(--color-accent); }
-.finding-card.priority-high { border-left-color: #D4843E; }
+.finding-card.priority-high { border-left-color: var(--color-priority-high); }
 .finding-card .priority-badge {
   display: inline-block; padding: 3px 10px; border-radius: 999px;
   font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;
   background: var(--color-soft-green); color: var(--color-primary);
 }
 .priority-badge.critical { background: var(--color-accent); color: var(--color-primary); }
-.priority-badge.high { background: #FFD4B3; color: var(--color-primary); }
+.priority-badge.high { background: var(--color-priority-high-soft); color: var(--color-primary); }
 .priority-badge.medium { background: var(--color-soft-green); color: var(--color-primary); }
 .priority-badge.low { background: var(--color-border); color: var(--color-text-soft); }
 
@@ -136,6 +138,11 @@ section { padding-bottom: var(--space-16); }
   border-bottom: 1px dashed var(--color-accent);
   cursor: help;
   position: relative;
+}
+.term:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 .term-tooltip {
   position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
