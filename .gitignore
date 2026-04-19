@@ -1,0 +1,8 @@
+.env
+cikti/
+railway-workspace/reports/*
+!railway-workspace/reports/.gitkeep
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
