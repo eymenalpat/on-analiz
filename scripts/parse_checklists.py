@@ -75,10 +75,15 @@ def parse_geo_sheet(ws):
 
 
 def main():
+    skill_dir = Path(__file__).parent.parent
+    default_seo = skill_dir / 'assets/source/SEO-Checklist.xlsx'
+    default_geo = skill_dir / 'assets/source/GEO-Checklist.xlsx'
+    default_out = skill_dir / 'assets/checklists'
+
     ap = argparse.ArgumentParser()
-    ap.add_argument('--seo', required=True, help='SEO checklist xlsx yolu')
-    ap.add_argument('--geo', required=True, help='GEO checklist xlsx yolu')
-    ap.add_argument('--out', required=True, help='Çıktı dizini')
+    ap.add_argument('--seo', default=str(default_seo), help='SEO checklist xlsx yolu')
+    ap.add_argument('--geo', default=str(default_geo), help='GEO checklist xlsx yolu')
+    ap.add_argument('--out', default=str(default_out), help='Çıktı dizini')
     args = ap.parse_args()
 
     out_dir = Path(args.out)

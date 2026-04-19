@@ -57,18 +57,61 @@ Skill iki şekilde tetiklenir:
 
 ---
 
-## Adım 1: Setup Kontrolü
+## Adım 1: Setup Kontrolü (Claude-native, Python gerektirmez)
 
-```
-if not os.path.exists('~/.claude/skills/on-analiz/.env'):
-    print("Setup henüz yapılmamış. Wizard başlatılıyor...")
-    subprocess.run(['python3', '~/.claude/skills/on-analiz/scripts/setup.py'])
-```
+Claude önce `.env` dosyasının varlığını kontrol eder. **Hiç terminal komutu çalıştırmaz; tüm işlem AskUserQuestion + Write + Bash tool ile yapılır.**
 
-.env'den değişkenler `python-dotenv` ile yüklenir:
+### 1.1 .env kontrolü
+
 ```bash
-source ~/.claude/skills/on-analiz/.env
+test -f ~/.claude/skills/on-analiz/.env && echo exists || echo missing
 ```
+
+Eğer `missing` dönerse, setup akışına gir. `exists` dönerse Adım 2'ye geç.
+
+### 1.2 API key'leri AskUserQuestion ile iste
+
+Claude şu mesajı verir ve AskUserQuestion tool'unu kullanır:
+
+> "İlk kurulumda gerekli API key'lerini sorayım. DataForSEO zorunlu (SERP verisi için), PageSpeed ve Railway opsiyonel. Her birini tek tek soracağım — boş bırakabilirsin."
+
+Sorular (ayrı mesajlarda, tek tek):
+1. "DataForSEO Login?" — serbest metin (Other seçeneği ile)
+2. "DataForSEO Password?" — serbest metin
+3. "PageSpeed API Key? (opsiyonel, onboarding modunda CWV için)" — boş geçilebilir
+4. "Railway Token? (opsiyonel, public URL deploy için)" — boş geçilebilir
+5. "Railway Project ID? (Railway kullanacaksan)" — boş geçilebilir
+
+### 1.3 .env dosyasını yaz
+
+Claude Write tool ile `~/.claude/skills/on-analiz/.env` dosyasını oluşturur:
+
+```
+DATAFORSEO_LOGIN=<kullanıcının yazdığı>
+DATAFORSEO_PASSWORD=<kullanıcının yazdığı>
+PAGESPEED_API_KEY=<opsiyonel>
+RAILWAY_TOKEN=<opsiyonel>
+RAILWAY_PROJECT_ID=<opsiyonel>
+DEFAULT_LANG=tr
+OUTPUT_DIR=./cikti
+```
+
+Ardından Bash ile dosya iznini güvenli hale getirir:
+```bash
+chmod 600 ~/.claude/skills/on-analiz/.env
+```
+
+### 1.4 .env'den değerleri yükle
+
+Her API çağrısı öncesi değerler shell ortamına yüklenir:
+```bash
+set -a && source ~/.claude/skills/on-analiz/.env && set +a
+```
+Böylece `$DATAFORSEO_LOGIN`, `$RAILWAY_TOKEN` vb. Bash komutlarında kullanılabilir hale gelir.
+
+### 1.5 Key güncelleme
+
+Kullanıcı `/on-analiz --setup` derse: `.env` dosyasını oku, mevcut değerleri göster (mask'lı), değiştirmek istediklerini sor, yeniden yaz.
 
 ---
 
@@ -399,12 +442,27 @@ os.makedirs(out_dir, exist_ok=True)
 Path(f'{out_dir}/rapor.html').write_text(rapor, encoding='utf-8')
 ```
 
-### 6.5 Lint pass
+### 6.5 Lint pass (Claude-native, Grep ile)
 
-```bash
-python3 ~/.claude/skills/on-analiz/scripts/lint_report.py --file {out_dir}/rapor.html
+Üretilen rapor HTML'ini Claude kendi Grep tool'u ile tarar — ayrı Python scripti gerekmez.
+
+Yasaklı kelime taraması:
 ```
-Uyarı varsa kullanıcıya bildir, Checkpoint #3'te göster.
+Grep pattern: \b(kesin|mutlaka|garanti|garantiliyoruz|hata|kötü|berbat|yanlış|başarısız)\b
+path: {out_dir}/rapor.html
+-i: true (case insensitive)
+```
+
+Emir kipi taraması (Türkçe -iniz/-ınız/-unuz/-ünüz + bariz emir formları):
+```
+Grep pattern: \b\w+(iniz|ınız|unuz|ünüz)\b|\b(yapın|edin|kurun|ekleyin|düzeltin|düzeltiniz)\b
+path: {out_dir}/rapor.html
+-i: true
+```
+
+Uyarı sayısını topla. Checkpoint #3'te kullanıcıya göster: *"N dil uyarısı bulundu, şu bölümlerde: ..."*. Tek tuşla o bölümü tekrar yazabilir.
+
+Allowlist (false positive): "değerlendirilebiliniz", "kullanılabiliniz" gibi nadir edilgen kullanımlar uyarı olarak gelmez — Claude grep sonucunu filtreleyerek karar verir.
 
 ---
 
@@ -438,27 +496,81 @@ open {out_dir}/rapor.html  # macOS
 
 ---
 
-## Adım 8: Opsiyonel Railway Deploy
+## Adım 8: Opsiyonel Railway Deploy (Claude-native, Bash ile)
 
-RAILWAY_TOKEN `.env`'de tanımlı mı?
+`.env`'de `RAILWAY_TOKEN` ve `RAILWAY_PROJECT_ID` tanımlı değilse bu adım atlanır. Tanımlıysa:
 
-```python
-if os.environ.get('RAILWAY_TOKEN'):
-    # Deploy sor
-    ask = "Bu raporu public linke dönüştürelim mi?"
-    # Evet → deploy.py çağır
-    subprocess.run([
-        'python3', '~/.claude/skills/on-analiz/scripts/deploy.py',
-        '--report', f'{out_dir}/rapor.html',
-        '--marka-slug', marka_slug,
-        '--tarih', tarih,
-        '--workspace', '~/.claude/skills/on-analiz/railway-workspace',
-    ])
+### 8.1 Kullanıcıya sor
+
+AskUserQuestion:
+> "Bu raporu public linke dönüştürelim mi? Müşteriye gönderebileceğin bir URL üretilecek."
+
+"Hayır" derse adımı atla, skill kapanır.
+
+### 8.2 Railway CLI kurulu mu kontrol et
+
+```bash
+command -v railway >/dev/null 2>&1 && echo installed || echo missing
 ```
 
-Çıktıda URL görünür, clipboard'a kopyalanır (macOS pbcopy).
+`missing` ise Claude kuruluma yardım eder:
+```bash
+# Homebrew varsa:
+brew install railway
+# yoksa npm:
+npm install -g @railway/cli
+# hiçbiri yoksa: kullanıcıya nazik bir mesaj, deploy atlanır
+```
 
-Deploy fail olursa: local rapor kalır, kullanıcıya uyarı, skill başarılı kapanır.
+### 8.3 Raporu workspace'e kopyala + index yeniden üret
+
+Claude Write tool ile, hiç Python gerektirmeden:
+
+```bash
+# Dosya kopyala
+cp {out_dir}/rapor.html ~/.claude/skills/on-analiz/railway-workspace/reports/{marka-slug}-{tarih}.html
+```
+
+`railway-workspace/index.html` dosyasını Claude kendisi Write ile yeniden üretir. İçerik:
+- Inbound brand kit'li minimal HTML (mevcut `railway-workspace/index.html` template'inden türetilir)
+- `reports/*.html` dosyalarının listesi `ls` ile alınır, `<a>` linkleri oluşturulur:
+
+```bash
+ls -1 ~/.claude/skills/on-analiz/railway-workspace/reports/*.html 2>/dev/null | xargs -n1 basename
+```
+
+Sonuç Claude tarafından `<ul><li><a href="reports/...">...</a></li></ul>` olarak Write edilir.
+
+### 8.4 Railway'e deploy
+
+```bash
+cd ~/.claude/skills/on-analiz/railway-workspace
+set -a && source ~/.claude/skills/on-analiz/.env && set +a
+railway link --project "$RAILWAY_PROJECT_ID" 2>/dev/null || true  # idempotent
+railway up --service on-analiz-reports --detach
+```
+
+### 8.5 URL'yi kullanıcıya ver
+
+Deploy logundan URL'yi yakala veya `railway domain` ile öğren:
+
+```bash
+railway domain --service on-analiz-reports 2>/dev/null || railway status
+```
+
+Public URL formatı: `https://<service>.up.railway.app/reports/{marka-slug}-{tarih}.html`
+
+Clipboard'a kopyala (macOS):
+```bash
+echo -n "https://..." | pbcopy
+```
+
+Kullanıcıya mesaj:
+> "✓ Rapor yayında: <URL> (clipboard'a kopyalandı)"
+
+### 8.6 Hata yönetimi
+
+Deploy fail olursa (quota, token geçersiz, vs.): local HTML duruyor, kullanıcıya nazik uyarı, skill başarıyla kapanır.
 
 ---
 
