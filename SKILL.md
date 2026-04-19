@@ -303,3 +303,225 @@ Severity mapping:
 - llms.txt yok → low
 
 ---
+
+## Adım 5: Checkpoint #2 — Bulgu Özeti Onayı
+
+`finding-synthesis.md` prompt'u Claude'un kendisine uygulanır. Girdi: `raw-data.json`. Çıktı: kullanıcıya gösterilecek Markdown özet.
+
+Üretilen `findings.json` olarak kaydedilir:
+```json
+{
+  "metrikler_ozet": "Marka DR 18 (rakip ort. ~34)...",
+  "teknik_ozet": "5 öncelikli, 12 orta, 8 takip edilebilir",
+  "keyword_firsatlar_ozet": "87 rakip-özel keyword, ~12K/ay potansiyel",
+  "oncelikli_bulgular": [ ... 5 madde ... ],
+  "veri_eksikleri": [ ... ]
+}
+```
+
+Kullanıcıya Markdown preview gösterilir + AskUserQuestion:
+```
+[{
+  question: "Bulgu özeti — raporu bu yönde yazalım mı?",
+  header: "Bulgu",
+  options: [
+    { label: "Rapora geç", description: "HTML üretilecek." },
+    { label: "Ek bulgu ekle", description: "Serbest metin input'u alınır, findings'e eklenir." },
+    { label: "Şu bölümü tekrar tara", description: "Belirli bir kaynağın verisi yenilenir." },
+    { label: "İptal", description: "Şimdilik dur. findings.json korunur." }
+  ]
+}]
+```
+
+---
+
+## Adım 6: Rapor Üretimi — Bölüm Bazında
+
+`report-writing.md` dosyası her bölüm için ayrı prompt sağlar. Claude her bölümü ayrı bir LLM çağrısında yazar.
+
+### 6.1 Yazım sırası
+
+1. Bölüm 1 — Yönetici Özeti
+2. Bölüm 2 — Temel Metrikler
+3. Bölüm 3 — Teknik SEO
+4. Bölüm 4 — Keyword Evreni
+5. Bölüm 5 — Fırsat Keyword'leri
+6. Bölüm 6 — SERP Analizi
+7. Bölüm 7 — Rakip Kıyası
+8. Bölüm 8 — GEO/AEO (kapsamda varsa; yoksa slot atlanır + sidebar nav güncellenir)
+9. Bölüm 9 — İçerik/Backlink Snapshot
+10. Bölüm 10 — Aksiyon Planı
+11. Bölüm 11 — Yöntem ve Notlar
+
+### 6.2 Her bölüm için süreç
+
+1. `language-rules.md` + `report-writing.md` + `raw-data.json` (ilgili slice) + `glossary.json` promptta toplanır.
+2. Claude HTML parçasını üretir (sadece section içeriği, wrapper YOK).
+3. Çıktı `lint_report.py` mantığına göre self-check: yasaklı kelime / emir kipi / Türkçe karakter?
+4. Uyarı varsa → rewrite.
+5. Temiz HTML `sections` dict'ine kaydedilir.
+
+### 6.3 Template'e enjekte
+
+```python
+template = Path('assets/report-template.html').read_text()
+brand_css = Path('assets/brand.css').read_text()
+glossary_json = Path('assets/glossary.json').read_text()
+
+rapor = (template
+    .replace('{{BRAND_CSS}}', brand_css)
+    .replace('{{GLOSSARY_JSON}}', glossary_json)
+    .replace('{{MARKA_ADI}}', marka_adi)
+    .replace('{{MARKA_DOMAIN}}', marka_domain)
+    .replace('{{TARIH}}', tarih)
+    .replace('{{MOD_ROZET}}', f"{mod.upper()} · {kapsam.upper()}")
+    .replace('{{YONETICI_OZETI}}', sections['ozet'])
+    .replace('{{METRIKLER}}', sections['metrikler'])
+    .replace('{{TEKNIK}}', sections['teknik'])
+    .replace('{{KEYWORDS}}', sections['keywords'])
+    .replace('{{FIRSATLAR}}', sections['firsatlar'])
+    .replace('{{SERP}}', sections['serp'])
+    .replace('{{RAKIPLER}}', sections['rakipler'])
+    .replace('{{GEO}}', sections.get('geo', ''))
+    .replace('{{BACKLINK}}', sections['backlink'])
+    .replace('{{AKSIYON}}', sections['aksiyon'])
+    .replace('{{YONTEM}}', sections['yontem'])
+)
+```
+
+GEO kapsamda yoksa: hem slot boş bırakılır hem sidebar'dan `#geo` nav item'ı silinir (string replace).
+
+### 6.4 Local save
+
+```python
+out_dir = f'./cikti/{marka_slug}/{tarih}'
+os.makedirs(out_dir, exist_ok=True)
+Path(f'{out_dir}/rapor.html').write_text(rapor, encoding='utf-8')
+```
+
+### 6.5 Lint pass
+
+```bash
+python3 ~/.claude/skills/on-analiz/scripts/lint_report.py --file {out_dir}/rapor.html
+```
+Uyarı varsa kullanıcıya bildir, Checkpoint #3'te göster.
+
+---
+
+## Adım 7: Checkpoint #3 — Rapor Draft Onayı
+
+Kullanıcıya özet:
+- Dosya yolu
+- Bölüm preview (her bölümün ilk 100 karakteri)
+- Toplam kelime sayısı
+- Lint uyarıları (varsa)
+- Tahmini okuma süresi
+
+AskUserQuestion:
+```
+[{
+  question: "Rapor hazır — bitiş aksiyonu?",
+  header: "Rapor",
+  options: [
+    { label: "Bitti, aç", description: "Browser'da aç, Railway deploy varsa yap." },
+    { label: "Şu bölümü tekrar yaz", description: "Belirli bir bölüm yeniden üretilir." },
+    { label: "Tüm raporu farklı tonla yeniden yaz", description: "Tüm bölümler yeniden." },
+    { label: "İptal (local sakla)", description: "HTML dosyası dursun, deploy yapma." }
+  ]
+}]
+```
+
+"Bitti, aç" seçilirse:
+```bash
+open {out_dir}/rapor.html  # macOS
+```
+
+---
+
+## Adım 8: Opsiyonel Railway Deploy
+
+RAILWAY_TOKEN `.env`'de tanımlı mı?
+
+```python
+if os.environ.get('RAILWAY_TOKEN'):
+    # Deploy sor
+    ask = "Bu raporu public linke dönüştürelim mi?"
+    # Evet → deploy.py çağır
+    subprocess.run([
+        'python3', '~/.claude/skills/on-analiz/scripts/deploy.py',
+        '--report', f'{out_dir}/rapor.html',
+        '--marka-slug', marka_slug,
+        '--tarih', tarih,
+        '--workspace', '~/.claude/skills/on-analiz/railway-workspace',
+    ])
+```
+
+Çıktıda URL görünür, clipboard'a kopyalanır (macOS pbcopy).
+
+Deploy fail olursa: local rapor kalır, kullanıcıya uyarı, skill başarılı kapanır.
+
+---
+
+## Adım 9: Final Özet
+
+Kullanıcıya son mesaj:
+```
+✓ Rapor üretildi: {out_dir}/rapor.html
+✓ Veri yedeği: {out_dir}/raw-data.json
+✓ Bulgu özeti: {out_dir}/findings.json
+{+ varsa:}
+✓ Public URL: https://...
+✓ Clipboard'a kopyalandı.
+
+Yeniden çalıştırmak için:
+/on-analiz --resume {marka-slug}        (veri yenile)
+/on-analiz --refresh-report {marka-slug} (sadece HTML yeniden)
+```
+
+---
+
+## Resume Modu
+
+`/on-analiz --resume {marka-slug}`:
+1. `./cikti/{marka-slug}/` altında en son tarih bulunur
+2. `meta.json` okunur → form değerleri yeniden
+3. `raw-data.json` varsa: "Var olan veriden devam? veya yenile?" sorulur
+4. Seçime göre Adım 5 (Checkpoint #2) veya Adım 4 (Veri toplama) baştan
+
+## Refresh-Report Modu
+
+`/on-analiz --refresh-report {marka-slug}`:
+1. Son run'un raw-data.json + findings.json okunur
+2. Sadece Adım 6 (HTML üretim) ve sonrası çalışır
+3. API çağrısı YOK — dil/ton iterasyonu için hızlı
+
+---
+
+## Hata Yönetimi Kısa Referans
+
+| Hata | Aksiyon |
+|---|---|
+| .env yok | setup.py yönlendir |
+| Marka domain erişilemiyor | Dur, kullanıcıya sor |
+| Rakip erişilemiyor | Devam, kısmi veri işareti |
+| Ahrefs rate limit | 3x retry (30/60/120s), fail → null |
+| DataForSEO fail | SERP bölümü atlanır |
+| WebFetch timeout | 2 retry, atla |
+| Railway fail | Local HTML kalır, uyarı |
+| LLM context overflow | Bölüm bağımsız yazılır, sadece o bölüm rewrite |
+
+---
+
+## Mod Detay Tablosu
+
+| Boyut | Pitch | Onboarding |
+|---|---|---|
+| Süre | 10-15 dk | 45-60 dk |
+| Rakip sayısı | 3 | 5 |
+| Top keyword (SERP) | 20 | 100 |
+| WebFetch sayfa | 5 | 20 |
+| Backlink örneklem | 100 en güçlü | Full |
+| CWV ölçümü | Yok | Var (PageSpeed) |
+| Aksiyon maddesi | 8-12 | 20-30 |
+| Rapor bölüm sayısı | 8-9 | 11-12 |
+| Opsiyonel form alanları | Atlanır | Sorulur |
