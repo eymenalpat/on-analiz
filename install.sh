@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # on-analiz skill tek adımlı kurulum scripti
 # Kullanım:
-#   curl -sSL https://raw.githubusercontent.com/inbound-tr/on-analiz/main/install.sh | bash
+#   curl -sSL https://raw.githubusercontent.com/eymenalpat/on-analiz/main/install.sh | bash
 #
 # Bu script sadece dosyaları indirir. API key'leri /on-analiz ilk çalıştığında
 # Claude içinden interaktif olarak istenir — hiç terminal komutu yazmanıza gerek yok.
 
 set -e
 
-REPO_URL="${ON_ANALIZ_REPO_URL:-https://github.com/inbound-tr/on-analiz.git}"
+REPO_URL="${ON_ANALIZ_REPO_URL:-https://github.com/eymenalpat/on-analiz.git}"
 SKILL_DIR="$HOME/.claude/skills/on-analiz"
 
 GREEN='\033[0;32m'

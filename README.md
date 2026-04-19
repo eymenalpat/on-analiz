@@ -7,7 +7,7 @@ Inbound için hazırlanmış Claude Code skill'i. Marka + rakip domainlerini al�
 Terminali aç, şunu yapıştır:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/inbound-tr/on-analiz/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/eymenalpat/on-analiz/main/install.sh | bash
 ```
 
 Bu komut:
