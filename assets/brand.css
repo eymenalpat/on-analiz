@@ -86,7 +86,7 @@ section { padding-bottom: var(--space-16); }
   padding: var(--space-6);
   box-shadow: var(--shadow-sm);
 }
-.scorecard .label { font-size: 0.85rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.scorecard .label { font-size: 0.85rem; color: var(--color-muted); letter-spacing: 0.03em; font-weight: 500; }
 .scorecard .value { font-family: var(--font-heading); font-weight: 800; font-size: 2.25rem; color: var(--color-primary); margin: var(--space-2) 0; }
 .scorecard .trend { font-size: 0.9rem; color: var(--color-soft-green); }
 .scorecard .trend.down { color: var(--color-accent); }
@@ -103,7 +103,7 @@ section { padding-bottom: var(--space-16); }
 .finding-card.priority-high { border-left-color: var(--color-priority-high); }
 .finding-card .priority-badge {
   display: inline-block; padding: 3px 10px; border-radius: 999px;
-  font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.01em;
   background: var(--color-soft-green); color: var(--color-primary);
 }
 .priority-badge.critical { background: var(--color-accent); color: var(--color-primary); }
