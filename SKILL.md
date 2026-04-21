@@ -1,7 +1,7 @@
 ---
 name: on-analiz
-description: Yeni müşteri ön analizi — marka + rakip domainleri alıp Ahrefs/DataForSEO/crawl verisi ile SEO+GEO denetimi yapar, Inbound brand kit'li interaktif HTML rapor üretir. Pitch ve onboarding modları. Türkçe çıktı. Triggers: /on-analiz, ön analiz, yeni müşteri analizi, domain denetimi, SEO+GEO denetimi.
-version: 1.0.0
+description: Yeni müşteri ön analizi — marka (+ isteğe bağlı rakip) alıp odağa göre tek bir veri kaynağından çalışır. Teknik → Ahrefs Site Audit MCP. Keyword → keywords-explorer + gsc. Backlink → Site Explorer backlink ailesi. Rakip → organic-competitors. Genel → geniş set. Her odakta sadece kendi tool ailesi çağrılır; diğerleri çağrılmaz. Pitch/onboarding modları, Inbound brand kit'li HTML rapor, Türkçe çıktı. Triggers: /on-analiz, ön analiz, yeni müşteri analizi, domain denetimi, SEO+GEO denetimi, keyword research raporu, backlink profil raporu, rakip analiz raporu, teknik audit raporu, Ahrefs Site Audit raporu.
+version: 1.3.0
 ---
 
 # /on-analiz — Yeni Müşteri Ön Analizi
@@ -26,6 +26,8 @@ version: 1.0.0
 - `onboarding` (45-60 dk): 5 rakip, top 100 keyword, 20 WebFetch, full backlink, CWV ölçümü, 20-30 aksiyon
 
 **Kapsam:** `seo` / `geo` / `seo+geo` (kullanıcı seçer).
+
+**Odak:** `genel` / `keyword` / `backlink` / `rakip` / `teknik` — raporun hangi eksende derinleşeceğini belirler. Detay için aşağıda "Rapor Odağı Sistemi" bölümüne bakılır.
 
 ---
 
@@ -53,7 +55,9 @@ Skill iki şekilde tetiklenir:
    - `--resume <marka-slug>` → en son `cikti/<marka-slug>/` run'ını devam ettir
    - `--refresh-report <marka-slug>` → ham veri kullanılır, sadece HTML yeniden üretilir
 
-**Kısa form:** `/on-analiz ornekmarka.com.tr vs rakip-a.com.tr,rakip-b.com mod=pitch kapsam=seo+geo sektor=lokal ulke=TR dil=tr`
+**Kısa form:** `/on-analiz ornekmarka.com.tr vs rakip-a.com.tr,rakip-b.com mod=pitch kapsam=seo+geo odak=genel sektor=lokal ulke=TR dil=tr`
+
+`odak` parametresi verilmezse Adım 2'de sorulur. Değerleri: `genel` (varsayılan davranış), `keyword`, `backlink`, `rakip`, `teknik`.
 
 ---
 
@@ -117,7 +121,15 @@ Kullanıcı `/on-analiz --setup` derse: `.env` dosyasını oku, mevcut değerler
 
 ## Adım 2: Input Formu
 
-AskUserQuestion tool'u ile 7 zorunlu alan tek mesajda sorulur. Opsiyoneller ayrı soru.
+**Odak önce sorulur** — rakip alanının zorunlu olup olmadığını odak belirler. AskUserQuestion max 4 seçenek sınırı nedeniyle form birkaç mesajda alınır:
+
+**Soru 1 (tek soru):** odak (5 seçenek → 2×3 split: "Genel / Özelleştirilmiş" sonra 4 spesifik)
+
+**Soru 2 (batch, 4 alan):** marka, (rakip — sadece odak ∈ {genel, rakip} ise), sektör, ülke
+
+**Soru 3 (batch, 3-4 alan):** dil, mod, kapsam, (opsiyonel: öncelikli kategoriler varsa)
+
+Teknik / keyword / backlink odaklarında **rakip alanı sorulmaz** — çünkü rakip verisi kullanılmayacak.
 
 ### Zorunlu alan seti:
 
@@ -154,11 +166,25 @@ AskUserQuestion `questions` dizisi:
   { ... ulke ... },
   { ... dil ... },
   { ... mod: pitch / onboarding ... },
-  { ... kapsam: seo / geo / ikisi ... }
+  { ... kapsam: seo / geo / ikisi ... },
+  {
+    question: "Rapor odağı?",
+    header: "Odak",
+    multiSelect: false,
+    options: [
+      { label: "Genel",             description: "Tüm bölümler dengeli — klasik ön analiz" },
+      { label: "Keyword Research",  description: "Keyword evreni, fırsatlar, SERP derinleşir; diğerleri özet" },
+      { label: "Backlink Profili",  description: "Backlink, referring domains, anchor, broken link derinleşir" },
+      { label: "Rakip Analizi",     description: "Rakip kıyası, keyword gap, content gap, SERP overlap derinleşir" },
+      { label: "Teknik Audit",      description: "Teknik bulgular, CWV, schema, crawl, indexability derinleşir" }
+    ]
+  }
 ]
 ```
 
 Yukarıdaki "Yaz" seçenekleri için kullanıcı "Other" seçerek serbest metin girer.
+
+**Odak seçimi Checkpoint #1, veri toplama ve rapor üretimini doğrudan etkiler** — detay "Rapor Odağı Sistemi" bölümünde.
 
 ### Opsiyonel alanlar (ayrı mesaj, atlanabilir):
 
@@ -199,17 +225,52 @@ WebFetch ile marka anasayfasından ilk 5000 karakter çekilir. `sector-detection
 }
 ```
 
-### 3.3 Rakip önerisi
+### 3.3 Rakip önerisi — **sadece odak ∈ {genel, rakip}**
 
-Ahrefs MCP tool: `mcp__ahrefs__site-explorer-organic-competitors` marka domain'i için çağrılır. Kullanıcının verdiği rakiplerle karşılaştırılır. Ahrefs'in verdiği ilk 5'te olup kullanıcı listesinde olmayan varsa:
+Teknik / keyword / backlink odaklarında bu adım tamamen atlanır. Rakip çağrısı yapılmaz.
+
+Genel veya rakip odağında: `mcp__ahrefs__site-explorer-organic-competitors` marka domain'i için çağrılır. Kullanıcının verdiği rakiplerle karşılaştırılır. Ahrefs'in verdiği ilk 5'te olup kullanıcı listesinde olmayan varsa:
 > "Ahrefs'in önerdiği güçlü rakipler: X, Y. Listeye eklemek ister misin?"
 
 ### 3.4 Süre ve tool call tahmini
 
-| Mod | Rakip | Ahrefs call | DataForSEO call | WebFetch | Toplam tahmin |
+**Odak = genel:**
+| Mod | Rakip | Ahrefs call | DataForSEO call | WebFetch | Toplam |
 |---|---|---|---|---|---|
-| pitch 3 rakip | 3 | 4 + 9 | 20 | 5 + 2 | ~40 call / ~10-15 dk |
-| onboarding 5 rakip | 5 | 4 + 15 | 100 | 20 + 2 | ~140 call / ~45-60 dk |
+| pitch | 3 | 4 + 9 | 20 | 5 + 2 | ~40 / 10-15 dk |
+| onboarding | 5 | 4 + 15 | 100 | 20 + 2 | ~140 / 45-60 dk |
+
+**Odak = teknik:**
+| Mod | Site Audit call | WebFetch fallback | PageSpeed | Toplam |
+|---|---|---|---|---|
+| pitch | projects + issues + page-explorer + 5×page-content = ~8 | yok (Site Audit varsa) | 1 | ~10 / 8-12 dk |
+| onboarding | projects + issues + page-explorer + 20×page-content = ~23 | yok (Site Audit varsa) | 2 | ~25 / 20-30 dk |
+| onboarding + fallback | — | 60 | 2 | ~62 / 40-55 dk |
+
+**Odak = keyword:**
+| Mod | Ahrefs call | DataForSEO call | Toplam |
+|---|---|---|---|
+| pitch | organic-keywords 50 + keywords-explorer 5 = ~8 | 40 | ~50 / 10-15 dk |
+| onboarding | organic-keywords 300 + keywords-explorer 20 = ~25 | 200 | ~225 / 45-60 dk |
+
+**Odak = backlink:**
+| Mod | Ahrefs call | Toplam |
+|---|---|---|
+| pitch | 6 (stats + RD50 + anchors + all-BL 100 + broken + linked-anchors) | ~7 / 8-12 dk |
+| onboarding | 9 (stats + RD300 + anchors full + all-BL 500 + broken + linked-anchors + linked-domains) | ~10 / 20-30 dk |
+
+**Odak = rakip:**
+| Mod | Ahrefs call | Toplam |
+|---|---|---|
+| pitch | marka 4 + 3 rakip × 5 = 19 | ~25 / 15-20 dk |
+| onboarding | marka 4 + 5 rakip × 5 = 29 | ~40 / 40-55 dk |
+
+### 3.4.1 Odak özeti (her zaman göster)
+
+Scope özetine odak satırı eklenir:
+> "Odak: **{odak}** — {1 cümle: bu odağın nereleri derinleştirip nereleri özetleyeceği}. Tahmini süre ve call sayısı yukarıdaki tabloda odağa göre revize edildi."
+
+Call sayısı tahmini odağa göre farklıdır — "Rapor Odağı Sistemi → 10.3" tablosundan türetilir.
 
 ### 3.5 Checkpoint #1 onay sorusu
 
@@ -233,6 +294,8 @@ AskUserQuestion:
 
 Çıktı dizinini oluştur: `./cikti/{marka-slug}/{YYYY-MM-DD}/`
 - slug: marka-domain'den `.` ve `/` kaldırılır, küçük harf
+
+**Odak gating:** Aşağıdaki çağrı listesi `odak=genel` için baseline'dır. Diğer odaklar için çağrı genişler/daralır — bkz. **"Rapor Odağı Sistemi → 10.3 Veri toplama deltaları"**. Her odak, N (top keyword sayısı), WebFetch sayfa sayısı ve ek tool call'ları farklı şekilde ölçekler. Veri toplama başlatmadan önce Claude aktif odağa göre çağrı listesini finalize eder ve Checkpoint #1'de kullanıcıya gösterir.
 
 ### 4.1 Marka için Ahrefs çağrıları (paralel batch, tek mesaj)
 
@@ -382,6 +445,8 @@ Kullanıcıya Markdown preview gösterilir + AskUserQuestion:
 
 `report-writing.md` dosyası her bölüm için ayrı prompt sağlar. Claude her bölümü ayrı bir LLM çağrısında yazar.
 
+**Odak bazlı derinlik:** Her bölümün derinliği `odak` değerine göre belirlenir (●/○/◐/—). Matris için **"Rapor Odağı Sistemi → 10.2 Bölüm derinlik matrisi"** bölümüne bakılır. `—` işaretli bölümler HTML'de üretilmez ve sidebar nav'dan silinir; `◐` işaretli bölümler 1 paragraf + tek scorecard ile kısaltılır; `●` işaretli bölümler için `report-writing.md` içindeki "Odak Bazlı Derinlik" alt başlığındaki genişletilmiş şablon kullanılır.
+
 ### 6.1 Yazım sırası
 
 1. Bölüm 1 — Yönetici Özeti
@@ -434,12 +499,16 @@ rapor = (template
 
 GEO kapsamda yoksa: hem slot boş bırakılır hem sidebar'dan `#geo` nav item'ı silinir (string replace).
 
+**Odak bazlı slot atlama:** `— (skip)` işaretli bölümlerin slot'u boş bırakılır ve sidebar nav'dan ilgili `<li>` string replace ile silinir. Bu mekanizma GEO'nun kapsam dışı davranışıyla birebir aynı. Örn: `odak=keyword` için Bölüm 9 (Backlink) HTML üretilmez, `{{BACKLINK}}` → `""` ve sidebar'dan `<li><a href="#backlink">` satırı silinir. Template hero bölümünde ek olarak `{{ODAK_ROZET}}` doldurulur: `<span class="odak-badge odak-{tip}">{label}</span>`.
+
 ### 6.4 Local save
 
 ```python
 out_dir = f'./cikti/{marka_slug}/{tarih}'
 os.makedirs(out_dir, exist_ok=True)
-Path(f'{out_dir}/rapor.html').write_text(rapor, encoding='utf-8')
+# Odak=genel ise rapor.html, diğer odaklarda rapor-{odak}.html
+dosya_adi = 'rapor.html' if odak == 'genel' else f'rapor-{odak}.html'
+Path(f'{out_dir}/{dosya_adi}').write_text(rapor, encoding='utf-8')
 ```
 
 ### 6.5 Lint pass (Claude-native, Grep ile)
@@ -621,6 +690,184 @@ Yeniden çalıştırmak için:
 | WebFetch timeout | 2 retry, atla |
 | Railway fail | Local HTML kalır, uyarı |
 | LLM context overflow | Bölüm bağımsız yazılır, sadece o bölüm rewrite |
+
+---
+
+## Rapor Odağı Sistemi
+
+`odak` alanı iki şeyi aynı anda belirler:
+
+1. **Veri kaynağı filtresi** — her odak yalnızca kendi tool ailesine gider. Diğer tool'lar çağrılmaz. Örn. `odak=teknik` → **Ahrefs Site Audit MCP** kullanılır; `organic-competitors`, `organic-keywords`, rakip analiz call'ları hiç yapılmaz. Kullanıcı "teknik" dediyse skill sadece teknik veri toplar.
+2. **Bölüm derinliği** — raporda hangi bölümler ● (derin) / ○ (normal) / ◐ (özet) / — (atla) olarak yazılır.
+
+Mod (pitch/onboarding) derinlik ekseniyken, odak **içerik ekseni**dir — ikisi birbirinden bağımsız. Örn: `pitch + keyword` = hızlı keyword tarama raporu; `onboarding + teknik` = derin teknik audit dosyası.
+
+**Kritik kural:** Form alanları ve Checkpoint #1 adımları da odağa göre koşullanır. Teknik/keyword/backlink odaklarında rakip alanı opsiyoneldir, rakip önerisi adımı atlanır.
+
+### 10.1 Odak tipleri ve amacı
+
+| Odak | Rapor karakteri | Tipik kullanım |
+|---|---|---|
+| **genel** | Mevcut davranış — tüm bölümler dengeli | Klasik ön analiz, yeni müşteri pitch'i |
+| **keyword** | Keyword evreni, fırsatlar, SERP derin | Content strategy hazırlığı, keyword research brief |
+| **backlink** | Backlink profili, anchor, referring domains derin | Link building proposal, off-site durum tespiti |
+| **rakip** | Rakip kıyası, gap analizi derin | Rakip savunma raporu, pozisyonlama analizi |
+| **teknik** | Teknik bulgular, CWV, schema, indexability derin | Teknik audit teslimi, dev ekibi brief'i |
+
+### 10.2 Bölüm derinlik matrisi
+
+Her odak, raporun 11 bölümünü farklı ağırlıkla işler:
+
+- ● **Derin (primary)** — bölüm 2-3 alt başlıkla genişler, SVG/tablo + detaylı yorum, 200+ kelime
+- ○ **Normal (secondary)** — standart yazım, mevcut şablonla uyumlu
+- ◐ **Özet (minimal)** — 1 paragraf + tek scorecard/istatistik; "bağlam için" notuyla
+- — **Atla (skip)** — bölüm raporda görünmez, sidebar nav'dan da silinir
+
+| Bölüm | genel | keyword | backlink | rakip | teknik |
+|---|---|---|---|---|---|
+| 1 Yönetici Özeti | ○ | ○ | ○ | ○ | ○ |
+| 2 Temel Metrikler | ○ | ◐ | ◐ | ○ | ◐ |
+| 3 Teknik SEO | ○ | ◐ | ◐ | ◐ | ● |
+| 4 Keyword Evreni | ○ | ● | ◐ | ○ | ◐ |
+| 5 Fırsat Keyword | ○ | ● | — | ● | — |
+| 6 SERP Analizi | ○ | ● | — | ○ | — |
+| 7 Rakip Kıyası | ○ | ○ | ○ | ● | ◐ |
+| 8 GEO/AEO | kapsam | kapsam | kapsam | kapsam | kapsam |
+| 9 Backlink Snapshot | ○ | — | ● | ○ | — |
+| 10 Aksiyon Planı | ○ | ○ (kw eksenli) | ○ (link eksenli) | ○ (rakip eksenli) | ○ (teknik eksenli) |
+| 11 Yöntem ve Notlar | ○ | ○ | ○ | ○ | ○ |
+
+**Kurallar:**
+- `—` işaretli bölüm HTML'de üretilmez, template slotu boş bırakılır, sidebar nav'dan `<li>` silinir (GEO yoksa uygulanan aynı mekanizma).
+- `●` bölümünün yazımı `report-writing.md` içinde "Odak Bazlı Derinlik" altında tanımlanmıştır — o odakta bölüm farklı alt başlıklarla açılır.
+- Bölüm 1 (Özet) her zaman `○`, ama içeriği odağa göre tonlanır: "Bu rapor keyword araştırması odağındadır; backlink ve teknik kısımlar bağlam için özetlenmiştir" gibi bir framing cümlesi eklenir.
+- Bölüm 10 (Aksiyon) her odakta üretilir, ama aksiyon maddeleri o odağın kategorisiyle filtrelenir. Pitch: 5-8 madde, Onboarding: 12-20 madde.
+
+### 10.3 Veri kaynağı & çağrı matrisi
+
+Her odak **yalnızca kendi tool ailesine** gider. `—` işaretli çağrı yapılmaz, yok sayılır. Skill başka odakların tool'larına "bağlam için minimal" dahi çağırmaz.
+
+| Tool ailesi | genel | keyword | backlink | rakip | teknik |
+|---|---|---|---|---|---|
+| **Ahrefs Site Audit** (projects/issues/page-explorer/page-content) | — | — | — | — | **● PRIMARY** |
+| `site-explorer-metrics` + `-domain-rating` | ✓ | ✓ | ✓ | ✓ | ◐ (sadece özet için) |
+| `site-explorer-top-pages` | 20 | 20 | — | 50 | — |
+| `site-explorer-organic-keywords` | pitch 20 / onb 100 | **pitch 50 / onb 300** | — | pitch 30 / onb 150 | — |
+| `site-explorer-organic-competitors` | ✓ | — | — | **✓** | — |
+| `site-explorer-backlinks-stats` | ✓ | — | ✓ | ✓ | — |
+| `site-explorer-referring-domains` | ilk 50 | — | **ilk 300 + delta** | ilk 100 | — |
+| `site-explorer-anchors` | ✓ | — | **✓ full** | ✓ | — |
+| `site-explorer-all-backlinks` sample | 100 | — | **500 + segment** | 100 | — |
+| `site-explorer-broken-backlinks` | — | — | **✓** | — | — |
+| `site-explorer-linked-anchors-external` | — | — | **✓** | — | — |
+| `site-explorer-linked-domains` | — | — | ✓ | — | — |
+| `keywords-explorer-*` (overview, related, matching, suggestions) | — | **✓** | — | ◐ gap için | — |
+| `gsc-keywords` + `gsc-keyword-history` (varsa) | ✓ | **✓** | — | ✓ | — |
+| DataForSEO SERP batch | pitch 20 / onb 100 | **pitch 40 / onb 200** | — | pitch 20 / onb 100 | — |
+| WebFetch sayfa sayısı | pitch 5 / onb 20 | pitch 5 / onb 20 | 5 | 10 | **Site Audit başarısızsa fallback: pitch 15 / onb 60** |
+| PageSpeed (CWV) | onb opsiyonel | — | — | — | **Site Audit'te yoksa marka + top 1 rakip zorunlu** |
+| Schema/JSON-LD extraction | homepage | — | — | — | **Site Audit page-content'ten** |
+| Rakip detay: her rakip için | 3 call | — | — | **5 call** | — |
+| Rakip önerisi (Checkpoint #1) | ✓ | — | — | ✓ | — |
+
+**Özel notlar:**
+- Teknik odakta **rakip bilgisi sıfırdır** — form'da rakip girilmemişse skill hiç sormaz. Rakip girilmişse yok sayılır.
+- Keyword odağında rakip keyword gap çıkarmak istiyorsa minimal `organic-keywords` top 20 her rakip için çağrılır — başka rakip call yok.
+- Backlink odağında keyword call yok — opportunity keyword üretilmez.
+- Rakip odağında backlink ailesi ortak RD tespiti için `referring-domains` ilk 100 ile sınırlı; keyword gap birincil veri.
+
+### 10.3.1 Teknik odak — Ahrefs Site Audit akışı
+
+Teknik odak Site Audit MCP'yi birincil kaynak kabul eder. Akış:
+
+**1. Proje tespiti**
+```
+mcp__ahrefs__site-audit-projects (filtre: marka domain)
+```
+Dönen listede `project_id` ve `last_crawl_date` aranır. 3 durum:
+
+- **A) Proje var, son crawl 30 günden yeni** → `project_id` ile devam et, yeni crawl talep etme.
+- **B) Proje var, son crawl 30 günden eski** → Kullanıcıya AskUserQuestion: "Son audit X gün eski. Mevcut veriyle devam mı, manuel yeni crawl bekleyelim mi, direct crawl fallback mı?" (skill crawl tetikleyemez).
+- **C) Proje yok** → Kullanıcıya bildir: "Ahrefs'te bu domain için aktif Site Audit projesi yok. Fallback: WebFetch + curl ile direct crawl (sınırlı veri)."
+
+**2. Veri çekme (proje varsa, A/B seçimi sonrası)**
+
+Paralel batch:
+- `site-audit-issues` — aktif tüm issue'lar (severity, category, affected_pages_count ile)
+- `site-audit-page-explorer` — top 200 sayfa (metrics: status_code, depth, word_count, title, h1, internal_linkrank, crawl_date)
+- `site-audit-page-content` — top 5-20 öncelikli sayfa (full HTML + schema + meta çekimi)
+  - pitch: 5 sayfa, onboarding: 20 sayfa
+
+**3. Fallback (C) — Site Audit yok**
+
+Skill direct crawl modunda çalışır:
+- Marka anasayfası + robots.txt + sitemap.xml + llms.txt
+- Sitemap'ten ilk 60 URL (onboarding) veya 15 URL (pitch) WebFetch
+- Her sayfa için on-page check (title/meta/h1/canonical/schema/noindex)
+- PageSpeed API ile marka anasayfa CWV
+- Site Audit-benzeri findings dict'i inşa edilir, rapor aynı şablonda yazılır
+
+Fallback kullanıldığında raporda belirgin bir `<div class="partial-data-notice">` ile "Veri kaynağı: direct crawl — Ahrefs Site Audit projesi olmadığı için sınırlı teknik bulgu" notu görünür.
+
+**4. raw-data.json içinde teknik slice**
+```json
+"teknik": {
+  "veri_kaynagi": "ahrefs_site_audit | direct_crawl",
+  "proje_id": "...",
+  "son_crawl": "YYYY-MM-DD",
+  "issues": [ { category, severity, message, affected_pages } ],
+  "pages": [ { url, status_code, title, h1_count, schema_types, word_count, internal_rank } ],
+  "cwv": { lcp, inp, cls, tbt },
+  "schema_coverage": { "Product": 432, "BreadcrumbList": 512, ... },
+  "indexability_summary": { noindex_count, canonical_mismatches, robots_blocked },
+  "bozuk_linkler": [ ... ],
+  "veri_eksikleri": [ ... ]
+}
+```
+
+### 10.4 Checkpoint #1'de odak özeti
+
+Scope onay mesajına odak ekleniyor — kullanıcı hangi çağrıların çalışacağını şeffaf görür:
+
+> "Odak: **keyword** — Ahrefs organic-keywords top 300, DataForSEO SERP 200 batch, backlink ve teknik veriler özet için toplanacak. Tahmini süre: ~50 dk (onboarding)."
+
+### 10.5 Aksiyon planı filtresi (Bölüm 10)
+
+`aksiyon_maddeleri` her bulgudan türetilir; her maddenin `kategori` alanı vardır: `keyword | content | onpage | technical | backlink | competitor | geo`. Odağa göre filtre:
+
+| Odak | Dahil edilen kategoriler |
+|---|---|
+| genel | hepsi |
+| keyword | `keyword, content, onpage` |
+| backlink | `backlink, competitor` |
+| rakip | `competitor, keyword, content` |
+| teknik | `technical, onpage` |
+
+Filtreden sonra eğer toplam madde sayısı hedefin altındaysa (pitch 5 / onb 12), komşu kategorilerden tamamlanır ve sonda "bağlam aksiyonları" alt başlığında verilir.
+
+### 10.6 Resume / refresh-report ile uyum
+
+- `--resume` modunda eski `meta.json` içinde `odak` alanı varsa, "Aynı odakta devam / odağı değiştir" seçeneği sunulur.
+- `--refresh-report` modunda odak değiştirilebilir; API çağrısı yapılmaz, var olan `raw-data.json` üzerinden sadece bölüm filtresi ve yazım tekrar işletilir. Eksik veri varsa (ör. eski run'da odak=genel iken şimdi backlink isteniyor ve `broken-backlinks` çağrılmamış) kullanıcı uyarılır: "Bu odak için veri eksikleri: X, Y. Ekstra çağrı yapayım mı?"
+
+### 10.7 Rapor başlığında odak rozet'i
+
+Template'e `{{ODAK_ROZET}}` placeholder'ı eklenir. Hero bölümünde mod rozet'inin yanında odak rozet'i gösterilir:
+
+```html
+<span class="mod-badge">PITCH · SEO+GEO</span>
+<span class="odak-badge odak-keyword">Keyword Research</span>
+```
+
+CSS sınıfı `odak-{tip}` her odak için farklı renk: `odak-genel` (nötr), `odak-keyword` (mavi), `odak-backlink` (mor), `odak-rakip` (turuncu), `odak-teknik` (yeşil). Stil `brand.css`'e eklenir.
+
+### 10.8 Dosya adlandırma
+
+Çıktı dosyası adı odak ile zenginleşir:
+```
+./cikti/{marka-slug}/{YYYY-MM-DD}/rapor-{odak}.html
+```
+Genel odak için geriye dönük uyumluluk: `rapor.html` (odak yoksa veya `genel` ise).
 
 ---
 
